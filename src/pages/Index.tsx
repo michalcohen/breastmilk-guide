@@ -1,8 +1,9 @@
 import { StorageCard } from '@/components/StorageCard';
-import { Baby, Refrigerator, Snowflake, Package } from 'lucide-react';
 import breastPumpImg from '@/assets/breast-pump.png';
+import babyImg from '@/assets/baby.png';
 import refrigeratorImg from '@/assets/refrigerator.png';
 import coolerBagImg from '@/assets/cooler-bag.png';
+import freezerImg from '@/assets/freezer.png';
 
 const Index = () => {
   return (
@@ -27,7 +28,7 @@ const Index = () => {
           <div className="animate-fade-in" style={{ animationDelay: '100ms' }}>
             <StorageCard
               to="/direct-use"
-              icon={<Baby size={56} strokeWidth={1.5} />}
+              image={babyImg}
               title="צריכה ישירה"
               description="חלב שנשאב ומיועד לצריכה מיידית ללא אחסון"
             />
@@ -37,7 +38,6 @@ const Index = () => {
             <StorageCard
               to="/refrigerator"
               image={refrigeratorImg}
-              icon={<Refrigerator size={56} strokeWidth={1.5} />}
               title="אחסון במקרר"
               description="אחסון קצר טווח לשימוש בימים הקרובים"
             />
@@ -47,7 +47,6 @@ const Index = () => {
             <StorageCard
               to="/cooler"
               image={coolerBagImg}
-              icon={<Package size={56} strokeWidth={1.5} />}
               title="אחסון בצידנית"
               description="להעברת חלב אם בטיולים ובדרכים"
             />
@@ -56,7 +55,7 @@ const Index = () => {
           <div className="animate-fade-in" style={{ animationDelay: '400ms' }}>
             <StorageCard
               to="/freezer"
-              icon={<Snowflake size={56} strokeWidth={1.5} />}
+              image={freezerImg}
               title="אחסון במקפיא"
               description="אחסון ארוך טווח לשמירה על מלאי חלב"
             />

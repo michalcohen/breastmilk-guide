@@ -5,7 +5,7 @@ import { ArrowLeft } from 'lucide-react';
 
 interface StorageCardProps {
   to: string;
-  icon: ReactNode;
+  icon?: ReactNode;
   title: string;
   description: string;
   image?: string;
@@ -20,11 +20,11 @@ export const StorageCard = ({ to, icon, title, description, image }: StorageCard
             <div className="w-32 h-32 flex items-center justify-center mb-2">
               <img src={image} alt={title} className="w-full h-full object-contain drop-shadow-lg group-hover:scale-110 transition-transform duration-300" />
             </div>
-          ) : (
+          ) : icon ? (
             <div className="text-primary group-hover:scale-110 transition-transform duration-300 drop-shadow-md">
               {icon}
             </div>
-          )}
+          ) : null}
           <h3 className="text-2xl font-bold text-foreground mb-1">{title}</h3>
           <p className="text-muted-foreground text-base leading-relaxed">{description}</p>
           <ArrowLeft className="text-primary mt-2 group-hover:translate-x-1 transition-transform" size={24} />
