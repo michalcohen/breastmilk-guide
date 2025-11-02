@@ -41,6 +41,10 @@ const FastThaw = () => {
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-primary mt-1">•</span>
+                  <span>ניתן גם להניח את השקית בקערית עם מים פושרים</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-primary mt-1">•</span>
                   <span>תהליך ההפשרה יארך כ-10-20 דקות</span>
                 </li>
               </ul>
@@ -48,13 +52,13 @@ const FastThaw = () => {
           </div>
 
           <div className="flex items-start gap-4">
-            <AlertCircle className="text-accent mt-1" size={24} />
+            <AlertCircle className="text-destructive mt-1" size={24} />
             <div>
               <h3 className="font-bold text-lg mb-2">הנחיות חשובות</h3>
               <ul className="space-y-2 text-muted-foreground">
                 <li className="flex items-start gap-2">
                   <span className="text-primary mt-1">•</span>
-                  <span>לעולם אל תפשירי במיקרוגל</span>
+                  <span>הפשרה במיקרוגל הורסת רכיבים חיוניים בחלב ועלולה לגרום לכוויות</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-primary mt-1">•</span>
@@ -74,7 +78,7 @@ const FastThaw = () => {
               <h3 className="font-bold text-lg mb-2">לאחר ההפשרה</h3>
               <p className="text-muted-foreground">
                 ניתן לחמם את החלב בעדינות לטמפרטורת גוף. אם החלב לא נצרך מיד, ניתן לאחסנו במקרר
-                למשך {data.afterThawing}.
+                למשך {data.afterThawingCountertop}.
               </p>
             </div>
           </div>

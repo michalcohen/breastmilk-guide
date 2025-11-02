@@ -45,6 +45,10 @@ const Cooler = () => {
                   <span className="text-primary mt-1">•</span>
                   <span>הימנעי מחשיפה ישירה לשמש</span>
                 </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-primary mt-1">•</span>
+                  <span>הקפידי שהקרחון יהיה צמוד למיכל החלב</span>
+                </li>
               </ul>
             </div>
           </div>
@@ -65,6 +69,10 @@ const Cooler = () => {
                 <li className="flex items-start gap-2">
                   <span className="text-primary mt-1">•</span>
                   <span>סמני את זמן השאיבה על כל מיכל</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-primary mt-1">•</span>
+                  <span>העבירי את החלב למקרר או למקפיא כמה שיותר מהר</span>
                 </li>
               </ul>
             </div>

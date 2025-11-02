@@ -27,7 +27,7 @@ const AfterHeating = () => {
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-primary mt-1">•</span>
-                  <span>הסיבי בעדינות כדי לערבב שכבות שומן</span>
+                  <span>ערבבי את החלב בבקבוק בתנועות סיבוביות עדינות כדי להמיס את שכבות השומן מבלי להכניס בועות אוויר רבות לחלב</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-primary mt-1">•</span>
@@ -44,15 +44,15 @@ const AfterHeating = () => {
               <ul className="space-y-2 text-muted-foreground">
                 <li className="flex items-start gap-2">
                   <span className="text-destructive mt-1">•</span>
-                  <span>אל תחממי במיקרוגל - עלול להרוס חומרים מזינים ולגרום לכוויות</span>
+                  <span>אל תחממי במיקרוגל - הדבר עלול להרוס חומרים מזינים ולגרום לכוויות</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-destructive mt-1">•</span>
-                  <span>אל תרתיחי את החלב - פוגע בתכונות התזונתיות</span>
+                  <span>אל תרתיחי את החלב - הדבר פוגע בתכונות התזונתיות של החלב</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-destructive mt-1">•</span>
-                  <span>אל תחממי חלב שכבר התחמם פעם</span>
+                  <span>אל תחממי חלב שכבר חומם בעבר</span>
                 </li>
               </ul>
             </div>
@@ -63,7 +63,7 @@ const AfterHeating = () => {
             <div>
               <h3 className="font-bold text-lg mb-2">משך זמן שימוש</h3>
               <p className="text-muted-foreground">
-                חלב שחומם ולא נצרך יכול להישאר בטמפרטורת החדר למשך{' '}
+                חלב שחומם ולא נצרך יכול להישאר בטמפרטורת החדר{' '}
                 <span className="font-bold text-primary">{data.afterHeating}</span>
               </p>
             </div>
@@ -82,7 +82,8 @@ const AfterHeating = () => {
           <div className="bg-accent/20 p-4 rounded-lg border border-accent/30">
             <p className="text-sm text-foreground">
               <span className="font-bold">שימי לב:</span> חלב שהתינוק התחיל לשתות ממנו אסור לשימוש חוזר.
-              יש לזרוק שאריות לאחר ההאכלה.
+              יש לזרוק שאריות לאחר ההאכלה. ניתן להמשיך להאכיל מהבקבוק {' '}
+              <span className="font-bold text-primary">{data.leftOvers}</span>
             </p>
           </div>
         </div>

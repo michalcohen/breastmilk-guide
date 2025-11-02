@@ -21,6 +21,9 @@ const Refrigerator = () => {
                 חלב אם ניתן לאחסון במקרר בטמפרטורה של{' '}
                 <span className="font-bold text-primary">{data.refrigerator}</span>
               </p>
+              <p className="text-muted-foreground">
+                ניתן להציע חלב גם ללא חימום
+              </p>
             </div>
           </div>
 
@@ -35,7 +38,7 @@ const Refrigerator = () => {
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-primary mt-1">•</span>
-                  <span>סמני כל בקבוק עם תאריך ושעת השאיבה</span>
+                  <span>סמני כל בקבוק עם תאריך ונפח השאיבה</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-primary mt-1">•</span>
@@ -43,7 +46,12 @@ const Refrigerator = () => {
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-primary mt-1">•</span>
-                  <span>ניתן לאחסן במיכלים סגורים היטב או בשקיות אחסון מיוחדות</span>
+                  <span>ניתן לאחסן במיכלים או בשקיות אחסון ייעודיים לחלב אם</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-primary mt-1">•</span>
+                  <span>אם לא יהיה שימוש בחלב השאוב {' '}
+                  <span className="font-bold text-primary">{data.refrigeratorBeforeFreezing}</span> , מומלץ להקפיאו כמה שיותר מוקדם</span>
                 </li>
               </ul>
             </div>
@@ -56,11 +64,11 @@ const Refrigerator = () => {
               <ul className="space-y-2 text-muted-foreground">
                 <li className="flex items-start gap-2">
                   <span className="text-primary mt-1">•</span>
-                  <span>אל תערבבי חלב חם עם חלב קר - קרי את החלב החדש לפני הוספה</span>
+                  <span>ניתן לאחד מיכלים, אך אל תערבבי חלב טרי עם חלב קר - קררי את החלב החדש לפני הוספה. תאריך השאיבה הקודם הוא הקובע. </span>
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-primary mt-1">•</span>
-                  <span>חלב מופשר שאוחסן במקרר אסור להקפיא שוב</span>
+                  <span>חלב מופשר שאוחסן במקרר (בין אם הופשר בהפשרה איטית במקרר או על השיש) אסור להקפיא שוב</span>
                 </li>
               </ul>
             </div>
