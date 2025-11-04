@@ -19,13 +19,13 @@ const Freezer = () => {
               <h3 className="font-bold text-lg mb-2">טמפרטורה ומשך זמן</h3>
               <div className="space-y-2 text-muted-foreground">
                 <p>
-                  מקפיא רגיל מומלץ לשימוש עד: <span className="font-bold text-primary">{data.freezerBest}</span>
+                  מקפיא רגיל מומלץ לשימוש: <span className="font-bold text-primary">{data.freezerBest}</span>
                 </p>
                 <p>
-                  מקפיא רגיל ניתן לשימוש עד: <span className="font-bold text-primary">{data.freezerAcceptable}</span>
+                  מקפיא רגיל ניתן לשימוש: <span className="font-bold text-primary">{data.freezerAcceptable}</span>
                 </p>
                 <p>
-                  מקפיא עמוק: <span className="font-bold text-primary">{data.deepFreezer}</span>
+                  מקפיא עמוק ניתן לשימוש עד: <span className="font-bold text-primary">{data.deepFreezer}</span>
                 </p>
               </div>
             </div>
@@ -52,10 +52,6 @@ const Freezer = () => {
                   <span className="text-primary mt-1">•</span>
                   <span>סמני בבירור תאריך ונפח שאיבה</span>
                 </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-primary mt-1">•</span>
-                  <span>הקפיאי במנות קטנות (60-120 מ"ל)  לנוחות ולמניעת בזבוז</span>
-                </li>
               </ul>
             </div>
           </div>
@@ -75,7 +71,11 @@ const Freezer = () => {
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-primary mt-1">•</span>
-                  <span>ניתן להוסיף חלב טרי מקורר לחלב קפוא (לא חלב חם)</span>
+                  <span>הקפיאי במנות קטנות (60-120 מ"ל)  לנוחות ולמניעת בזבוז</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-primary mt-1">•</span>
+                  <span>אל תקפיאי חלב שנועד לצריכה בימים הקרובים. לחלב טרי תכונות בריאותיות עדיפות על פני חלב קפוא ומופשר</span>
                 </li>
               </ul>
             </div>

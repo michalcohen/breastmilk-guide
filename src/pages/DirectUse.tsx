@@ -17,7 +17,7 @@ const DirectUse = () => {
             <div>
               <h3 className="font-bold text-lg mb-2">טמפרטורת החדר</h3>
               <p className="text-muted-foreground">
-                חלב אם שנשאב יכול להישאר בטמפרטורת החדר ({data.roomTemp}) למשך{' '}
+                חלב אם שנשאב יכול להישאר בטמפרטורת החדר ({data.roomTemp}){' '}
                 <span className="font-bold text-primary">{data.roomTempDuration}</span>
               </p>
             </div>
@@ -27,10 +27,17 @@ const DirectUse = () => {
             <Clock className="text-secondary mt-1" size={24} />
             <div>
               <h3 className="font-bold text-lg mb-2">זמן צריכה מומלץ</h3>
-              <p className="text-muted-foreground">
-                לצריכה אופטימלית, מומלץ להאכיל את התינוק בחלב האם מיד לאחר השאיבה או בהקדם האפשרי.
+              <ul className="space-y-2 text-muted-foreground">
+                <li className="flex items-start gap-2">
+                  <span className="text-primary mt-1">•</span>
+                  לצריכה אופטימלית, מומלץ להאכיל את התינוק בחלב האם מיד לאחר השאיבה או בהקדם האפשרי.
                 חלב טרי שומר על כל התכונות התזונתיות והאימונולוגיות שלו.
-              </p>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-primary mt-1">•</span>
+                  יש לזרוק שאריות חלב שנותרו בבקבוק <span className="font-bold text-primary">{data.leftOvers}</span>
+                </li>
+              </ul>
             </div>
           </div>
 

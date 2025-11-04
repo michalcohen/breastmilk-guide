@@ -77,8 +77,7 @@ const FastThaw = () => {
             <div>
               <h3 className="font-bold text-lg mb-2">לאחר ההפשרה</h3>
               <p className="text-muted-foreground">
-                ניתן לחמם את החלב בעדינות לטמפרטורת גוף. אם החלב לא נצרך מיד, ניתן לאחסנו במקרר
-                למשך {data.afterThawingCountertop}.
+                ניתן לחמם את החלב בעדינות לטמפרטורת גוף. יש לצרוך את החלב <span className="font-bold text-primary">{data.afterHeating}</span> לכל היותר.
               </p>
             </div>
           </div>

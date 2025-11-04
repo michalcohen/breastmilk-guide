@@ -31,7 +31,7 @@ const Cooler = () => {
               <ul className="space-y-2 text-muted-foreground">
                 <li className="flex items-start gap-2">
                   <span className="text-primary mt-1">•</span>
-                  <span>השתמשי בצידנית מבודדת עם מצברי קרח קפואים</span>
+                  <span>השתמשי בצידנית מבודדת עם קרחומים קפואים</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-primary mt-1">•</span>
@@ -47,7 +47,7 @@ const Cooler = () => {
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-primary mt-1">•</span>
-                  <span>הקפידי שהקרחון יהיה צמוד למיכל החלב</span>
+                  <span>הקפידי שהקרחום יהיה צמוד למיכל החלב</span>
                 </li>
               </ul>
             </div>
@@ -60,19 +60,15 @@ const Cooler = () => {
               <ul className="space-y-2 text-muted-foreground">
                 <li className="flex items-start gap-2">
                   <span className="text-primary mt-1">•</span>
-                  <span>בתום 24 שעות, העבירי את החלב למקרר או למקפיא</span>
+                  <span>העבירי את החלב למקרר או למקפיא כמה שיותר מוקדם</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-primary mt-1">•</span>
-                  <span>אם הקרח נמס לחלוטין, החלב חייב להיצרך תוך מספר שעות</span>
+                  <span>אם הקרח הותך לחלוטין, יש להתייחס לחלב כאל חלב בטמפרטורת החדר</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-primary mt-1">•</span>
                   <span>סמני את זמן השאיבה על כל מיכל</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-primary mt-1">•</span>
-                  <span>העבירי את החלב למקרר או למקפיא כמה שיותר מהר</span>
                 </li>
               </ul>
             </div>

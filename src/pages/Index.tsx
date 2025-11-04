@@ -57,7 +57,7 @@ const Index = () => {
               to="/freezer"
               image={freezerImg}
               title="אחסון במקפיא"
-              description="אחסון ארוך טווח לשמירה על מלאי חלב"
+              description="אחסון ארוך טווח רק אם החלב לא ייצרך בימים הקרובים"
             />
           </div>
         </div>
