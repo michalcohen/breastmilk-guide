@@ -63,7 +63,7 @@ const SlowThaw = () => {
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-primary mt-1">•</span>
-                  <span>הסיבי בעדינות לערבב שכבות שומן שנפרדו</span>
+                  <span>ערבבי בעדינות את החלב כדי לשחרר שכבות שומן שהתקשו</span>
                 </li>
               </ul>
             </div>
