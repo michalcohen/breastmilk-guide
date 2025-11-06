@@ -77,6 +77,10 @@ const Freezer = () => {
                   <span className="text-primary mt-1">•</span>
                   <span>אל תקפיאי חלב שנועד לצריכה בימים הקרובים. לחלב טרי תכונות בריאותיות עדיפות על פני חלב קפוא ומופשר</span>
                 </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-primary mt-1">•</span>
+                  <span>שיטת ההפשרה המומלצת היא הפשרה איטית במקרר</span>
+                </li>
               </ul>
             </div>
           </div>

@@ -68,6 +68,10 @@ const FastThaw = () => {
                   <span className="text-primary mt-1">•</span>
                   <span>חלב מופשר אסור להקפאה חוזרת</span>
                 </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-primary mt-1">•</span>
+                  <span>חלב שהופשר בשיטה המהירה הוא למטרת צריכה מיידית ואין לאחסנו במקרר (גם אם לא נאכל)</span>
+                </li>
               </ul>
             </div>
           </div>
