@@ -86,18 +86,18 @@ const Freezer = () => {
       <div className="mt-8">
         <h2 className="text-2xl font-bold mb-6 text-center">אפשרויות הפשרה</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-          <StorageCard
-            to="/fast-thaw"
-            icon={<Zap size={40} />}
-            title="הפשרה מהירה"
-            description="לצריכה מיידית - במים פושרים"
-          />
-          
+                   
           <StorageCard
             to="/slow-thaw"
             icon={<SnowflakeIcon size={40} />}
             title="הפשרה איטית במקרר"
             description="הדרך המומלצת - הפשרה הדרגתית"
+          />
+          <StorageCard
+            to="/fast-thaw"
+            icon={<Zap size={40} />}
+            title="הפשרה מהירה"
+            description="לצריכה מיידית - במים פושרים"
           />
         </div>
       </div>
