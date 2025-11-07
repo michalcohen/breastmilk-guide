@@ -19,7 +19,7 @@ const AfterHeating = () => {
               <ul className="space-y-2 text-muted-foreground">
                 <li className="flex items-start gap-2">
                   <span className="text-primary mt-1">•</span>
-                  <span>העמידי את הבקבוק במים חמים (לא רותחים)</span>
+                  <span>העמידי את הבקבוק במים חמימים (לא רותחים)</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-primary mt-1">•</span>
@@ -72,10 +72,17 @@ const AfterHeating = () => {
           <div className="flex items-start gap-4">
             <Thermometer className="text-secondary mt-1" size={24} />
             <div>
-              <h3 className="font-bold text-lg mb-2">טמפרטורה מומלצת</h3>
-              <p className="text-muted-foreground">
-                טמפרטורת הגוף (37°C) היא הטמפרטורה האידיאלית. החלב יכול להיות מעט פושר אבל לא חם.
-              </p>
+              <h3 className="font-bold text-lg mb-2">טמפרטורת הגשה</h3>
+              <ul className="space-y-2 text-muted-foreground">
+                <li className="flex items-start gap-2">
+                  <span className="text-destructive mt-1">•</span>
+                  <span>טמפרטורת הגוף (37°C) היא טמפרטורת החימום האידיאלית. החלב יכול להיות מעט פושר אבל לא חם.</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-destructive mt-1">•</span>
+                  <span>ניתן להגיש את החלב גם קר, הישר מהמקרר. ישנם ילדים שאף מעדיפים אותו כך.</span>
+                </li>
+              </ul>
             </div>
           </div>
 

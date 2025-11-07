@@ -60,7 +60,7 @@ const DirectUse = () => {
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-primary mt-1">•</span>
-                  <span>אל תחזירי חלב שהתינוק כבר התחיל לשתות ממנו למקרר</span>
+                  <span>אין להחזיר למקרר חלב שהתינוק כבר התחיל לשתות ממנו</span>
                 </li>
               </ul>
             </div>

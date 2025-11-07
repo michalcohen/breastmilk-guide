@@ -45,7 +45,7 @@ export const guidelines: Record<GuidelineSource, StorageGuideline> = {
     cooler: 'עד 24 שעות',
     thawing: 'במקרר, במים קרים או פושרים',
     afterThawingCountertop: 'עד שעתיים',
-    afterThawingRefrigerator: 'עד 24 שעות',
+    afterThawingRefrigerator: 'עד 24 שעות במקרר',
     afterHeating: 'עד שעתיים',
     container: 'בשקית או כלי ייעודי לאחסון חלב אם',
     leftOvers: 'עד שעתיים מסיום ההאכלה'
@@ -77,7 +77,7 @@ export const guidelines: Record<GuidelineSource, StorageGuideline> = {
     cooler: '15°C - עד 24 שעות',
     thawing: 'במקרר בלבד',
     afterThawingCountertop: 'עד שעה לפני ההאכלה',
-    afterThawingRefrigerator: 'עד 24 שעות',
+    afterThawingRefrigerator: 'עד 24 שעות במקרר',
     afterHeating: 'עד שעתיים',
     container: 'בשקית או כלי ייעודי לאחסון חלב אם, עם תו תקן ישראלי',
     leftOvers: 'עד שעה מתחילת ההאכלה'

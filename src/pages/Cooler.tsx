@@ -64,7 +64,7 @@ const Cooler = () => {
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-primary mt-1">•</span>
-                  <span>אם הקרח הותך לחלוטין, יש להתייחס לחלב כאל חלב בטמפרטורת החדר</span>
+                  <span>אם הקרח הופשר לחלוטין, יש להתייחס לחלב כאל חלב בטמפרטורת החדר</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-primary mt-1">•</span>

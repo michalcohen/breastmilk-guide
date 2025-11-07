@@ -68,7 +68,7 @@ const Refrigerator = () => {
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-primary mt-1">•</span>
-                  <span>חלב מופשר שאוחסן במקרר (בין אם הופשר בהפשרה איטית במקרר או על השיש) אסור להקפיא שוב</span>
+                  <span>חלב שהופשר במקרר אסור להקפאה חוזרת</span>
                 </li>
               </ul>
             </div>
