@@ -68,8 +68,21 @@ const BottleFeeding = () => {
 
           <div className="flex items-start gap-4">
             <Ear className="text-accent mt-1" size={24} />
-            <div>
+            <div className="w-full">
               <h3 className="font-bold text-lg mb-2">האכלה קשובה מבקבוק</h3>
+              
+              <div className="mb-4 rounded-xl overflow-hidden shadow-lg">
+                <div className="relative w-full" style={{ paddingBottom: '56.25%' }}>
+                  <iframe
+                    className="absolute top-0 left-0 w-full h-full"
+                    src="https://www.youtube.com/embed/U0vFcEe3CF4"
+                    title="האכלה קשובה מבקבוק"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                  />
+                </div>
+              </div>
+
               <ul className="space-y-2 text-muted-foreground">
                 <li className="flex items-start gap-2">
                   <span className="text-destructive mt-1">•</span>
