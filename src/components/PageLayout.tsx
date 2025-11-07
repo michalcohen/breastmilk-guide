@@ -12,8 +12,8 @@ interface PageLayoutProps {
 
 export const PageLayout = ({ children, title, showSelector = true }: PageLayoutProps) => {
   return (
-    <div className="min-h-screen bg-background py-8 px-4">
-      <div className="max-w-4xl mx-auto">
+    <div className="min-h-screen bg-background py-8 px-4 flex flex-col">
+      <div className="max-w-4xl mx-auto w-full flex-1">
         <div className="flex justify-between items-center mb-8">
           <h1 className="text-3xl md:text-4xl font-bold text-foreground">{title}</h1>
           <Link to="/">
@@ -29,6 +29,12 @@ export const PageLayout = ({ children, title, showSelector = true }: PageLayoutP
           {children}
         </div>
       </div>
+      
+      <footer className="max-w-4xl mx-auto w-full mt-12 pt-6 border-t border-border/30">
+        <p className="text-center text-sm text-muted-foreground/50">
+          מיכל מעודה
+        </p>
+      </footer>
     </div>
   );
 };
