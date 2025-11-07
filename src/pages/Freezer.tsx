@@ -38,19 +38,19 @@ const Freezer = () => {
               <ul className="space-y-2 text-muted-foreground">
                 <li className="flex items-start gap-2">
                   <span className="text-primary mt-1">•</span>
-                  <span>אחסני בחלק האחורי של המקפיא (לא בדלת)</span>
+                  <span>יש לאחסן בחלק האחורי של המקפיא (לא בדלת)</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-primary mt-1">•</span>
-                  <span>השתמשי בשקיות ייעודיות להקפאת חלב אם</span>
+                  <span>יש להשתמש בשקיות ייעודיות להקפאת חלב אם</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-primary mt-1">•</span>
-                  <span>השאירי מקום בשקית - החלב מתפשט בהקפאה</span>
+                  <span>מומלץ להשאיר מקום בשקית לפני אטימתה - החלב מתפשט בהקפאה</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-primary mt-1">•</span>
-                  <span>סמני בבירור תאריך ונפח שאיבה</span>
+                  <span>יש לסמן בבירור תאריך ונפח שאיבה</span>
                 </li>
               </ul>
             </div>
@@ -63,7 +63,7 @@ const Freezer = () => {
               <ul className="space-y-2 text-muted-foreground">
                 <li className="flex items-start gap-2">
                   <span className="text-primary mt-1">•</span>
-                  <span>השתמשי קודם בחלב הישן ביותר</span>
+                  <span>יש להשתמש קודם בחלב הישן ביותר</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-primary mt-1">•</span>
@@ -71,11 +71,11 @@ const Freezer = () => {
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-primary mt-1">•</span>
-                  <span>הקפיאי במנות קטנות (60-120 מ"ל)  לנוחות ולמניעת בזבוז</span>
+                  <span>מומלץ להקפיא במנות קטנות (60-120 מ"ל)  לנוחות ולמניעת בזבוז</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-primary mt-1">•</span>
-                  <span>אל תקפיאי חלב שנועד לצריכה בימים הקרובים. לחלב טרי תכונות בריאותיות עדיפות על פני חלב קפוא ומופשר</span>
+                  <span>מומלץ לא להקפיא חלב שנועד לצריכה בימים הקרובים. לחלב טרי תכונות בריאותיות עדיפות על פני חלב קפוא ומופשר</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-primary mt-1">•</span>

@@ -34,19 +34,19 @@ const Refrigerator = () => {
               <ul className="space-y-2 text-muted-foreground">
                 <li className="flex items-start gap-2">
                   <span className="text-primary mt-1">•</span>
-                  <span>אחסני את החלב בחלק האחורי של המקרר (לא בדלת)</span>
+                  <span>יש לאחסן את החלב בחלק האחורי של המקרר (לא בדלת)</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-primary mt-1">•</span>
-                  <span>סמני כל בקבוק עם תאריך ונפח השאיבה</span>
+                  <span>יש לסמן כל בקבוק עם תאריך ונפח השאיבה</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-primary mt-1">•</span>
-                  <span>השתמשי קודם בחלב הישן ביותר</span>
+                  <span>יש להתמש קודם בחלב הישן ביותר</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-primary mt-1">•</span>
-                  <span>ניתן לאחסן במיכלים או בשקיות אחסון ייעודיים לחלב אם</span>
+                  <span>יש לאחסן במיכלים או בשקיות אחסון ייעודיים לחלב אם</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-primary mt-1">•</span>
@@ -64,7 +64,7 @@ const Refrigerator = () => {
               <ul className="space-y-2 text-muted-foreground">
                 <li className="flex items-start gap-2">
                   <span className="text-primary mt-1">•</span>
-                  <span>ניתן לאחד מיכלים, אך אל תערבבי חלב טרי עם חלב קר - קררי את החלב החדש לפני הוספה. תאריך השאיבה הקודם הוא הקובע. </span>
+                  <span>ניתן לאחד מיכלים, אך אין לערבב חלב טרי עם חלב קר - יש לקרר את החלב החדש לפני הוספה. תאריך השאיבה הקודם הוא הקובע. </span>
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-primary mt-1">•</span>

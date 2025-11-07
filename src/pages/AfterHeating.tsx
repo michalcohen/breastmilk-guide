@@ -19,19 +19,15 @@ const AfterHeating = () => {
               <ul className="space-y-2 text-muted-foreground">
                 <li className="flex items-start gap-2">
                   <span className="text-primary mt-1">•</span>
-                  <span>העמידי את הבקבוק במים חמימים (לא רותחים)</span>
+                  <span>ניתן להעמיד את הבקבוק במים חמימים (לא רותחים), או במחמם בקבוקים ייעודי</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-primary mt-1">•</span>
-                  <span>ניתן להשתמש במחמם בקבוקים</span>
+                  <span>יש לערבב את החלב בבקבוק בתנועות סיבוביות עדינות כדי להמיס את שכבות השומן מבלי להכניס בועות אוויר רבות לחלב</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-primary mt-1">•</span>
-                  <span>ערבבי את החלב בבקבוק בתנועות סיבוביות עדינות כדי להמיס את שכבות השומן מבלי להכניס בועות אוויר רבות לחלב</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-primary mt-1">•</span>
-                  <span>בדקי את הטמפרטורה על פרק כף היד לפני ההאכלה</span>
+                  <span>יש לבדוק את הטמפרטורה על פרק כף היד לפני ההאכלה</span>
                 </li>
               </ul>
             </div>
@@ -40,19 +36,19 @@ const AfterHeating = () => {
           <div className="flex items-start gap-4">
             <AlertTriangle className="text-destructive mt-1" size={24} />
             <div>
-              <h3 className="font-bold text-lg mb-2 text-destructive">אל תעשי זאת!</h3>
+              <h3 className="font-bold text-lg mb-2 text-destructive">אזהרה!</h3>
               <ul className="space-y-2 text-muted-foreground">
                 <li className="flex items-start gap-2">
                   <span className="text-destructive mt-1">•</span>
-                  <span>אל תחממי במיקרוגל - הדבר עלול להרוס חומרים מזינים ולגרום לכוויות</span>
+                  <span>אסור לחמם במיקרוגל - הדבר עלול להרוס חומרים מזינים ולגרום לכוויות</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-destructive mt-1">•</span>
-                  <span>אל תרתיחי את החלב - הדבר פוגע בתכונות התזונתיות של החלב</span>
+                  <span>אסור להרתיח חלב אם - הדבר פוגע בתכונות התזונתיות של החלב</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-destructive mt-1">•</span>
-                  <span>אל תחממי חלב שכבר חומם בעבר</span>
+                  <span>אסור לחמם בשנית חלב שכבר חומם בעבר</span>
                 </li>
               </ul>
             </div>
@@ -76,7 +72,7 @@ const AfterHeating = () => {
               <ul className="space-y-2 text-muted-foreground">
                 <li className="flex items-start gap-2">
                   <span className="text-destructive mt-1">•</span>
-                  <span>טמפרטורת הגוף (37°C) היא טמפרטורת החימום האידיאלית. החלב יכול להיות מעט פושר אבל לא חם.</span>
+                  <span>טמפרטורת הגוף (37°C) היא טמפרטורת החימום האידיאלית. החלב יכול להיות פושר או חמים אבל לא חם.</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-destructive mt-1">•</span>

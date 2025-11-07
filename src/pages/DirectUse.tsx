@@ -17,7 +17,8 @@ const DirectUse = () => {
             <div>
               <h3 className="font-bold text-lg mb-2">טמפרטורת החדר</h3>
               <p className="text-muted-foreground">
-                חלב אם שנשאב יכול להישאר בטמפרטורת החדר ({data.roomTemp}){' '}
+                חלב אם שנשאב יכול להישאר בטמפרטורת החדר {' '}
+                  <span className="font-bold text-primary">({data.roomTemp})</span>{' '}
                 <span className="font-bold text-primary">{data.roomTempDuration}</span>
               </p>
             </div>
@@ -48,15 +49,15 @@ const DirectUse = () => {
               <ul className="space-y-2 text-muted-foreground">
                 <li className="flex items-start gap-2">
                   <span className="text-primary mt-1">•</span>
-                  <span>ודאי שהבקבוק או המיכל נקיים ומעוקרים</span>
+                  <span>יש לוודא שהבקבוק או המיכל נקיים ומעוקרים</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-primary mt-1">•</span>
-                  <span>סמני את זמן השאיבה על המיכל</span>
+                  <span>יש לסמן את תאריך השאיבה על המיכל</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-primary mt-1">•</span>
-                  <span>אם החלב לא נצרך תוך הזמן המומלץ, העבירי למקרר או למקפיא</span>
+                  <span>אם החלב לא נצרך תוך הזמן המומלץ, יש להעביר למקרר או למקפיא בהקדם</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-primary mt-1">•</span>
@@ -69,7 +70,7 @@ const DirectUse = () => {
           <div className="bg-primary/10 p-4 rounded-lg border border-primary/20">
             <p className="text-sm text-foreground">
               <span className="font-bold">לתשומת לבך:</span> ההמלצות משתנות בין ארגוני הבריאות השונים.
-              בחרי את הארגון המועדף עליך מהכפתורים למעלה.
+              ניתן לבחור את הארגון המועדף עליך מהכפתורים למעלה.
             </p>
           </div>
         </div>

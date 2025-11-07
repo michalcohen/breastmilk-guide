@@ -2,7 +2,8 @@ import { PageLayout } from '@/components/PageLayout';
 import { Card } from '@/components/ui/card';
 import { useGuideline } from '@/contexts/GuidelineContext';
 import { guidelines } from '@/data/guidelines';
-import { Zap, Droplets, AlertCircle, Flame } from 'lucide-react';
+import { StorageCard } from '@/components/StorageCard';
+import { Thermometer, Droplets, AlertCircle, Flame } from 'lucide-react';
 
 const FastThaw = () => {
   const { source } = useGuideline();
@@ -13,31 +14,21 @@ const FastThaw = () => {
       <Card className="p-6 bg-card">
         <div className="space-y-6">
           <div className="flex items-start gap-4">
-            <Zap className="text-primary mt-1" size={24} />
-            <div>
-              <h3 className="font-bold text-lg mb-2">שיטות הפשרה מהירה</h3>
-              <p className="text-muted-foreground mb-3">
-                כאשר יש צורך בחלב במהירות, ניתן להפשיר בשיטה מהירה:
-              </p>
-            </div>
-          </div>
-
-          <div className="flex items-start gap-4">
             <Droplets className="text-secondary mt-1" size={24} />
             <div>
               <h3 className="font-bold text-lg mb-2">הפשרה במים</h3>
               <ul className="space-y-2 text-muted-foreground">
                 <li className="flex items-start gap-2">
                   <span className="text-primary mt-1">•</span>
-                  <span>החזיקי את השקית או הבקבוק תחת מים קרים זורמים</span>
+                  <span>להחזיק את השקית או הבקבוק תחת מים קרים זורמים</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-primary mt-1">•</span>
-                  <span>העלי בהדרגה את טמפרטורת המים לפושרים</span>
+                  <span>להעלות בהדרגה את טמפרטורת המים לפושרים</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-primary mt-1">•</span>
-                  <span>ודאי שהמים לא חמים מדי - פושרים בלבד</span>
+                  <span>יש לוודא שהמים לא חמים מדי - פושרים בלבד</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-primary mt-1">•</span>
@@ -62,7 +53,7 @@ const FastThaw = () => {
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-primary mt-1">•</span>
-                  <span>אל תשתמשי במים רותחים או חמים מאוד</span>
+                  <span>אסור להשתמש במים רותחים או חמים מאוד</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-primary mt-1">•</span>
@@ -80,9 +71,18 @@ const FastThaw = () => {
             <Flame className="text-primary mt-1" size={24} />
             <div>
               <h3 className="font-bold text-lg mb-2">לאחר ההפשרה</h3>
-              <p className="text-muted-foreground">
-                ניתן לחמם את החלב בעדינות לטמפרטורת גוף. יש לצרוך את החלב <span className="font-bold text-primary">{data.afterHeating}</span> לכל היותר.
-              </p>
+              <ul className="space-y-2 text-muted-foreground">
+                <li className="flex items-start gap-2">
+                  <span className="text-primary mt-1">•</span>
+                  ניתן לחמם את החלב בעדינות לטמפרטורת גוף. יש לצרוך את החלב <span className="font-bold text-primary">{data.afterHeating}</span> לכל היותר.
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-primary mt-1">•</span>
+                  <span>ניתן להציע את החלב גם קר מהמקרר. יש תינוקות שאף מעדיפים לצרוך אותו כך</span>
+                </li>
+                
+              </ul>
+              
             </div>
           </div>
 
@@ -94,6 +94,18 @@ const FastThaw = () => {
           </div>
         </div>
       </Card>
+
+      <div className="mt-8">
+        <h2 className="text-2xl font-bold mb-6 text-center">השלב הבא</h2>
+        <div className="max-w-md mx-auto">
+          <StorageCard
+            to="/after-heating"
+            icon={<Thermometer size={40} />}
+            title="צריכה לאחר חימום"
+            description="הוראות לחימום והגשת החלב המופשר"
+          />
+        </div>
+      </div>
     </PageLayout>
   );
 };

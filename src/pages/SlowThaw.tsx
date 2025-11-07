@@ -31,11 +31,11 @@ const SlowThaw = () => {
               <ul className="space-y-2 text-muted-foreground">
                 <li className="flex items-start gap-2">
                   <span className="text-primary mt-1">•</span>
-                  <span>העבירי את החלב מהמקפיא למקרר</span>
+                  <span>יש להעביר את החלב מהמקפיא למקרר</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-primary mt-1">•</span>
-                  <span>אחסני בחלק האחורי של המקרר (לא בדלת)</span>
+                  <span>יש לאחסן בחלק האחורי של המקרר (לא בדלת)</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-primary mt-1">•</span>
@@ -43,7 +43,7 @@ const SlowThaw = () => {
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-primary mt-1">•</span>
-                  <span>תכנני מראש - העבירי למקרר בערב לפני יום השימוש</span>
+                  <span>מומלץ לתכנן מראש - העברה למקרר בערב לפני יום השימוש, תמנע את הצורך בהפשרה מהירה</span>
                 </li>
               </ul>
             </div>
@@ -53,17 +53,19 @@ const SlowThaw = () => {
             <Thermometer className="text-accent mt-1" size={24} />
             <div>
               <h3 className="font-bold text-lg mb-2">לאחר ההפשרה</h3>
-              <p className="text-muted-foreground mb-3">
-                משך זמן שימוש: {data.afterThawingRefrigerator} מהפשרה מלאה (לא מרגע ההעברה למקרר)
-              </p>
               <ul className="space-y-2 text-muted-foreground">
-                <li className="flex items-start gap-2">
+              <li className="flex items-start gap-2">
                   <span className="text-primary mt-1">•</span>
-                  <span>ניתן לחמם את החלב בעדינות לפני ההאכלה</span>
+                  משך זמן שימוש: {' '}
+                  <span className="font-bold text-primary">{data.afterThawingRefrigerator}</span> מהפשרה מלאה (לא מרגע ההעברה למקרר)
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-primary mt-1">•</span>
-                  <span>ערבבי בעדינות את החלב כדי לשחרר שכבות שומן שהתקשו</span>
+                  <span>ניתן לחמם את החלב לפני ההאכלה על פי הוראות חימום חלב אם</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-primary mt-1">•</span>
+                  <span>יש לערבב בעדינות את החלב כדי לשחרר שכבות שומן שהתקשו</span>
                 </li>
               </ul>
             </div>
@@ -80,7 +82,7 @@ const SlowThaw = () => {
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-destructive mt-1">•</span>
-                  <span>אם לא השתמשת בחלב תוך 24 שעות - יש לזרוק אותו</span>
+                  <span>אם לא היה שימוש בחלב תוך 24 שעות - יש לזרוק אותו</span>
                 </li>
               </ul>
             </div>
@@ -89,7 +91,7 @@ const SlowThaw = () => {
       </Card>
 
       <div className="mt-8">
-        <h2 className="text-2xl font-bold mb-6 text-center">המשך לשלב הבא</h2>
+        <h2 className="text-2xl font-bold mb-6 text-center">השלב הבא</h2>
         <div className="max-w-md mx-auto">
           <StorageCard
             to="/after-heating"

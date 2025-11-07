@@ -31,23 +31,23 @@ const Cooler = () => {
               <ul className="space-y-2 text-muted-foreground">
                 <li className="flex items-start gap-2">
                   <span className="text-primary mt-1">•</span>
-                  <span>השתמשי בצידנית מבודדת עם קרחומים קפואים</span>
+                  <span>יש להשתמש בצידנית מבודדת עם קרחומים קפואים</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-primary mt-1">•</span>
-                  <span>הקפידי שהקרח נשאר קפוא במהלך כל תקופת האחסון</span>
+                  <span>יש לוודא שהקרח נשאר קפוא במהלך כל תקופת האחסון</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-primary mt-1">•</span>
-                  <span>מזערי פתיחה וסגירה של הצידנית</span>
+                  <span>יש למזער פתיחה וסגירה של הצידנית</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-primary mt-1">•</span>
-                  <span>הימנעי מחשיפה ישירה לשמש</span>
+                  <span>מומלץ להימנע מחשיפה ישירה לשמש</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-primary mt-1">•</span>
-                  <span>הקפידי שהקרחום יהיה צמוד למיכל החלב</span>
+                  <span>יש להקפיד שהקרחום יהיה צמוד למיכל החלב</span>
                 </li>
               </ul>
             </div>
@@ -60,7 +60,7 @@ const Cooler = () => {
               <ul className="space-y-2 text-muted-foreground">
                 <li className="flex items-start gap-2">
                   <span className="text-primary mt-1">•</span>
-                  <span>העבירי את החלב למקרר או למקפיא כמה שיותר מוקדם</span>
+                  <span>יש להעביר את החלב למקרר או למקפיא כמה שיותר מוקדם</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-primary mt-1">•</span>
@@ -68,7 +68,7 @@ const Cooler = () => {
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-primary mt-1">•</span>
-                  <span>סמני את זמן השאיבה על כל מיכל</span>
+                  <span>יש לסמן את זמן השאיבה על כל מיכל</span>
                 </li>
               </ul>
             </div>
