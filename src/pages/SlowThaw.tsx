@@ -12,7 +12,7 @@ const SlowThaw = () => {
   return (
     <PageLayout title="הפשרה איטית במקרר">
       <Card className="p-6 bg-card">
-        <div className="space-y-6">
+        <div key={source} className="space-y-6 animate-fade-in">
           <div className="flex items-start gap-4">
             <Snowflake className="text-primary mt-1" size={24} />
             <div>

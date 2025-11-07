@@ -12,7 +12,7 @@ const Freezer = () => {
   return (
     <PageLayout title="אחסון במקפיא">
       <Card className="p-6 bg-card">
-        <div className="space-y-6">
+        <div key={source} className="space-y-6 animate-fade-in">
           <div className="flex items-start gap-4">
             <Thermometer className="text-primary mt-1" size={24} />
             <div>
