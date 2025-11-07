@@ -3,7 +3,7 @@ import { Card } from '@/components/ui/card';
 import { useGuideline } from '@/contexts/GuidelineContext';
 import { guidelines } from '@/data/guidelines';
 import { StorageCard } from '@/components/StorageCard';
-import { Thermometer, Droplets, AlertCircle, Flame } from 'lucide-react';
+import { Thermometer, Droplets, AlertCircle, Flame, BabyIcon } from 'lucide-react';
 
 const FastThaw = () => {
   const { source } = useGuideline();
@@ -101,8 +101,14 @@ const FastThaw = () => {
           <StorageCard
             to="/after-heating"
             icon={<Thermometer size={40} />}
-            title="צריכה לאחר חימום"
-            description="הוראות לחימום והגשת החלב המופשר"
+            title="חימום חלב אם"
+            description="הוראות לחימום החלב המופשר"
+          />
+          <StorageCard
+            to="/bottle-feeding"
+            icon={<BabyIcon size={40} />}
+            title="האכלה קשובה"
+            description="הוראות האכלה נכונה מבקבוק ומיכלים אחרים"
           />
         </div>
       </div>

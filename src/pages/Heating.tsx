@@ -2,14 +2,15 @@ import { PageLayout } from '@/components/PageLayout';
 import { Card } from '@/components/ui/card';
 import { useGuideline } from '@/contexts/GuidelineContext';
 import { guidelines } from '@/data/guidelines';
-import { Flame, Thermometer, AlertTriangle, Clock } from 'lucide-react';
+import { Flame, Thermometer, AlertTriangle, Clock, PillBottle, PillBottleIcon, BabyIcon } from 'lucide-react';
+import { StorageCard } from '@/components/StorageCard';
 
-const AfterHeating = () => {
+const Heating = () => {
   const { source } = useGuideline();
   const data = guidelines[source];
 
   return (
-    <PageLayout title="צריכה לאחר חימום">
+    <PageLayout title="חימום חלב אם">
       <Card className="p-6 bg-card">
         <div key={source} className="space-y-6 animate-fade-in">
           <div className="flex items-start gap-4">
@@ -91,8 +92,20 @@ const AfterHeating = () => {
           </div>
         </div>
       </Card>
+
+      <div className="mt-8">
+        <h2 className="text-2xl font-bold mb-6 text-center">השלב הבא</h2>
+        <div className="max-w-md mx-auto">
+          <StorageCard
+            to="/bottle-feeding"
+            icon={<BabyIcon size={40} />}
+            title="האכלה קשובה"
+            description="הוראות האכלה נכונה מבקבוק ומיכלים אחרים"
+          />
+        </div>
+      </div>
     </PageLayout>
   );
 };
 
-export default AfterHeating;
+export default Heating;

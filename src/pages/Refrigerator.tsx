@@ -3,7 +3,7 @@ import { Card } from '@/components/ui/card';
 import { StorageCard } from '@/components/StorageCard';
 import { useGuideline } from '@/contexts/GuidelineContext';
 import { guidelines } from '@/data/guidelines';
-import { Thermometer, Calendar, AlertCircle, Flame, Snowflake } from 'lucide-react';
+import { Thermometer, Calendar, AlertCircle, Flame, Snowflake, BabyIcon } from 'lucide-react';
 
 const Refrigerator = () => {
   const { source } = useGuideline();
@@ -89,8 +89,15 @@ const Refrigerator = () => {
           <StorageCard
             to="/after-heating"
             icon={<Flame size={40} />}
-            title="צריכה לאחר חימום"
-            description="כיצד לחמם ולהגיש חלב ממקרר"
+            title="חימום חלב אם"
+            description="כיצד לחמם ולהגיש חלב מהמקרר"
+          />
+
+          <StorageCard
+            to="/bottle-feeding"
+            icon={<BabyIcon size={40} />}
+            title="האכלה קשובה"
+            description="הוראות האכלה נכונה מבקבוק ומיכלים אחרים"
           />
         </div>
       </div>

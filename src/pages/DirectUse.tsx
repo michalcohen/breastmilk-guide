@@ -2,7 +2,8 @@ import { PageLayout } from '@/components/PageLayout';
 import { Card } from '@/components/ui/card';
 import { useGuideline } from '@/contexts/GuidelineContext';
 import { guidelines } from '@/data/guidelines';
-import { Clock, Thermometer, AlertCircle } from 'lucide-react';
+import { Clock, Thermometer, AlertCircle, BabyIcon } from 'lucide-react';
+import { StorageCard } from '@/components/StorageCard';
 
 const DirectUse = () => {
   const { source } = useGuideline();
@@ -75,6 +76,18 @@ const DirectUse = () => {
           </div>
         </div>
       </Card>
+
+      <div className="mt-8">
+        <h2 className="text-2xl font-bold mb-6 text-center">השלב הבא</h2>
+        <div className="max-w-md mx-auto">
+          <StorageCard
+            to="/bottle-feeding"
+            icon={<BabyIcon size={40} />}
+            title="האכלה קשובה"
+            description="הוראות האכלה נכונה מבקבוק ומיכלים אחרים"
+          />
+        </div>
+      </div>
     </PageLayout>
   );
 };

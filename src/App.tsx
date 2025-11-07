@@ -9,10 +9,11 @@ import DirectUse from "./pages/DirectUse";
 import Refrigerator from "./pages/Refrigerator";
 import Cooler from "./pages/Cooler";
 import Freezer from "./pages/Freezer";
-import AfterHeating from "./pages/AfterHeating";
+import Heating from "./pages/Heating";
 import FastThaw from "./pages/FastThaw";
 import SlowThaw from "./pages/SlowThaw";
 import NotFound from "./pages/NotFound";
+import BottleFeeding from "./pages/BottleFeeding";
 
 const queryClient = new QueryClient();
 
@@ -29,9 +30,10 @@ const App = () => (
             <Route path="/refrigerator" element={<Refrigerator />} />
             <Route path="/cooler" element={<Cooler />} />
             <Route path="/freezer" element={<Freezer />} />
-            <Route path="/after-heating" element={<AfterHeating />} />
+            <Route path="/after-heating" element={<Heating />} />
             <Route path="/fast-thaw" element={<FastThaw />} />
             <Route path="/slow-thaw" element={<SlowThaw />} />
+            <Route path="/bottle-feeding" element={<BottleFeeding />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
           </Routes>
