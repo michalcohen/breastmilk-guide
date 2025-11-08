@@ -42,7 +42,7 @@ const Refrigerator = () => {
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-primary mt-1">•</span>
-                  <span>יש להתמש קודם בחלב הישן ביותר</span>
+                  <span>יש להשתמש קודם בחלב הישן ביותר</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-primary mt-1">•</span>
@@ -64,7 +64,7 @@ const Refrigerator = () => {
               <ul className="space-y-2 text-muted-foreground">
                 <li className="flex items-start gap-2">
                   <span className="text-primary mt-1">•</span>
-                  <span>ניתן לאחד מיכלים, אך אין לערבב חלב טרי עם חלב קר - יש לקרר את החלב החדש לפני הוספה. תאריך השאיבה הקודם הוא הקובע. </span>
+                  <span>ניתן לאחד מיכלים, אך יש לבצע קודם השוואת טמפרטורות, כלומר לקרר את החלב החדש לפני הוספה. תאריך השאיבה הקודם הוא הקובע. </span>
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-primary mt-1">•</span>

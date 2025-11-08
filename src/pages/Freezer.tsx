@@ -71,7 +71,7 @@ const Freezer = () => {
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-primary mt-1">•</span>
-                  <span>מומלץ להקפיא במנות קטנות (60-120 מ"ל)  לנוחות ולמניעת בזבוז</span>
+                  <span>מומלץ להקפיא במנות קטנות (30-90 מ"ל)  לנוחות ולמניעת בזבוז</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-primary mt-1">•</span>
