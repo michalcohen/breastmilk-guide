@@ -25,14 +25,6 @@ const Index = () => {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-          <div className="animate-fade-in" style={{ animationDelay: '100ms' }}>
-            <StorageCard
-              to="/direct-use"
-              image={babyImg}
-              title="צריכה ישירה"
-              description="חלב שנשאב ומיועד לצריכה מיידית ללא אחסון"
-            />
-          </div>
           
           <div className="animate-fade-in" style={{ animationDelay: '200ms' }}>
             <StorageCard
@@ -40,6 +32,15 @@ const Index = () => {
               image={refrigeratorImg}
               title="אחסון במקרר"
               description="אחסון קצר טווח לשימוש בימים הקרובים"
+            />
+          </div>
+
+          <div className="animate-fade-in" style={{ animationDelay: '400ms' }}>
+            <StorageCard
+              to="/freezer"
+              image={freezerImg}
+              title="אחסון במקפיא"
+              description="אחסון ארוך טווח רק אם החלב לא ייצרך בימים הקרובים"
             />
           </div>
           
@@ -52,14 +53,16 @@ const Index = () => {
             />
           </div>
           
-          <div className="animate-fade-in" style={{ animationDelay: '400ms' }}>
+          
+          <div className="animate-fade-in" style={{ animationDelay: '100ms' }}>
             <StorageCard
-              to="/freezer"
-              image={freezerImg}
-              title="אחסון במקפיא"
-              description="אחסון ארוך טווח רק אם החלב לא ייצרך בימים הקרובים"
+              to="/direct-use"
+              image={babyImg}
+              title="צריכה ישירה"
+              description="חלב שנשאב ומיועד לצריכה מיידית ללא אחסון"
             />
           </div>
+          
         </div>
 
         <div className="mt-16 text-center animate-fade-in" style={{ animationDelay: '500ms' }}>
