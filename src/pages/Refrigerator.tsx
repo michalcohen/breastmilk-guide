@@ -70,6 +70,11 @@ const Refrigerator = () => {
                   <span className="text-primary mt-1">•</span>
                   <span>חלב שהופשר במקרר אסור להקפאה חוזרת</span>
                 </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-primary mt-1">•</span>
+                  <span>חלב שהוצא מהמקרר ללא צידנית עם קרחום קפוא, ייחשב כחלב שחומם וייצרך {' '}
+                  <span className="font-bold text-primary">{data.afterHeating}</span></span>
+                </li>
               </ul>
             </div>
           </div>
