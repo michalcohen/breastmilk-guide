@@ -67,7 +67,7 @@ const Freezer = () => {
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-primary mt-1">•</span>
-                  <span>חלב מופשר אסור להקפיא שנית</span>
+                  <span>חלב שהגיע להפשרה מלאה (כלומר, ללא גושי קרח כלל) אסור להקפיא שנית.</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-primary mt-1">•</span>
