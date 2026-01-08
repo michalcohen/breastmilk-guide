@@ -1,4 +1,5 @@
 import { StorageCard } from '@/components/StorageCard';
+import { Sparkles } from 'lucide-react';
 import breastPumpImg from '@/assets/breast-pump.png';
 import babyImg from '@/assets/baby.png';
 import refrigeratorImg from '@/assets/refrigerator.png';
@@ -63,6 +64,15 @@ const Index = () => {
             />
           </div>
           
+        </div>
+
+        <div className="mt-8 max-w-4xl mx-auto animate-fade-in" style={{ animationDelay: '600ms' }}>
+          <StorageCard
+            to="/sterilization"
+            icon={<Sparkles size={64} />}
+            title="הנחיות סטריליזציה"
+            description="מידע על סטריליזציה למשאבה, בקבוקים וציוד נלווה"
+          />
         </div>
 
         <div className="mt-16 text-center animate-fade-in" style={{ animationDelay: '500ms' }}>
