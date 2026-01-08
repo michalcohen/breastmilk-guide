@@ -14,6 +14,7 @@ import FastThaw from "./pages/FastThaw";
 import SlowThaw from "./pages/SlowThaw";
 import NotFound from "./pages/NotFound";
 import BottleFeeding from "./pages/BottleFeeding";
+import Sterilization from "./pages/Sterilization";
 
 const queryClient = new QueryClient();
 
@@ -34,6 +35,7 @@ const App = () => (
             <Route path="/fast-thaw" element={<FastThaw />} />
             <Route path="/slow-thaw" element={<SlowThaw />} />
             <Route path="/bottle-feeding" element={<BottleFeeding />} />
+            <Route path="/sterilization" element={<Sterilization />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
           </Routes>
