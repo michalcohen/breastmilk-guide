@@ -52,7 +52,7 @@ const BottleFeeding = () => {
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-destructive mt-1">•</span>
-                  <span>עד גיל חצי שנה, יש לבצע סטריליזציה גם למיכלי החלב ולבקבוקים (לא לצינורית, אותה יש להחליף כאחת לשבוע)</span>
+                  <span>עד גיל חצי שנה, יש לבצע סטריליזציה גם למיכלי החלב ולבקבוקים (לא מבצעים סטריליזציה לצינורית האכלה, אותה יש להחליף כאחת לשבוע)</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-destructive mt-1">•</span>
