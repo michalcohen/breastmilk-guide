@@ -90,7 +90,7 @@ const Sterilization = () => {
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-primary mt-1">•</span>
-                  <span>מומלץ להשתמש בקערה לניקוי הציוד כך שלא יהיה זיהום משני משאריות מזון בכיור או על השיש</span>
+                  <span>יש להשתמש בקערה לניקוי הציוד כך שלא יהיה זיהום משני משאריות מזון בכיור או על השיש</span>
                 </li>
               </ul>
             </div>
