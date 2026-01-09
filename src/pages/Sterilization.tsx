@@ -1,10 +1,61 @@
 import { PageLayout } from '@/components/PageLayout';
 import { Card } from '@/components/ui/card';
 import { Sparkles, Clock, AlertTriangle, Droplets, Wind, Baby, ListCheck } from 'lucide-react';
+import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow, TableCaption } from '@/components/ui/table';
 import { useGuideline } from '@/contexts/GuidelineContext';
 import { guidelines } from '@/data/guidelines';
 
 const Sterilization = () => {
+  type MethodStatus = 'allowed' | 'forbidden' | 'unknown' | 'unrecomanded';
+
+  const sterilizationMethods = ['הרתחה במים', 'מדיח', 'מעקר חשמלי (קיטור)', 'שקיות סטריליזציה למיקרוגל'];
+
+  const pumps: { name: string; manufacturer: string; statuses: MethodStatus[] }[] = [
+    {
+      name: 'Mya Joy / Finesse',
+      manufacturer: 'Ameda',
+      statuses: ['allowed', 'allowed', 'unknown', 'unknown'],
+    },
+    {
+      name: 'Annabella',
+      manufacturer: 'Annabella',
+      statuses: ['allowed', 'allowed', 'allowed', 'forbidden'],
+    },
+    {
+      name: 'Alyssa / Calypso / Bellis',
+      manufacturer: 'Ardo',
+      statuses: ['allowed', 'allowed', 'unknown', 'allowed'],
+    },
+    {
+      name: 'Pump Pro / New / Soft / Pump up',
+      manufacturer: 'Biamba',
+      statuses: ['allowed', 'allowed', 'unknown', 'forbidden'],
+    },
+    {
+      name: 'Pro II/III',
+      manufacturer: 'Clinicare',
+      statuses: ['allowed', 'unknown', 'unknown', 'unrecomanded'],
+    },
+    {
+      name: 'Free Style / Swing Maxi',
+      manufacturer: 'Medela',
+      statuses: ['allowed', 'allowed', 'unknown', 'allowed'],
+    },
+  ];
+
+  const renderStatus = (status: MethodStatus) => {
+    if (status === 'allowed') {
+      return <span className="text-emerald-600 font-bold">✔</span>;
+    }
+    if (status === 'forbidden') {
+      return <span className="text-destructive font-bold">✖</span>;
+    }
+    if (status === 'unrecomanded'){
+      return <span className="text-destructive font-bold">〆</span>;
+    }
+    return null;
+  };
+
   const { source } = useGuideline();
   const data = guidelines[source];
   return (
@@ -144,6 +195,48 @@ const Sterilization = () => {
                     <li>• נוחות לשימוש בנסיעות</li>
                   </ul>
                 </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="flex items-start gap-4">
+            <ListCheck className="text-primary mt-1" size={24} />
+            <div className="w-full">
+              <h3 className="font-bold text-lg mb-2">טבלת התאמה לפי סוג המשאבה ושיטת הסטריליזציה</h3>
+              <p className="text-sm text-muted-foreground mb-3">
+                הסימונים בטבלה מתייחסים להנחיות היצרן עבור חלקי המשאבה שבאים במגע עם החלב. תמיד יש לוודא בהתאם
+                להוראות השימוש של הדגם הספציפי.
+              </p>
+              <div className="bg-secondary/10 p-3 rounded-lg">
+                <Table>
+                  <TableHeader>
+                    <TableRow>
+                      <TableHead className="text-right w-48">יצרן ומשאבה</TableHead>
+                      {sterilizationMethods.map((method) => (
+                        <TableHead key={method} className="text-center">
+                          {method}
+                        </TableHead>
+                      ))}
+                    </TableRow>
+                  </TableHeader>
+                  <TableBody>
+                    {pumps.map((pump) => (
+                      <TableRow key={`${pump.manufacturer}-${pump.name}`}>
+                        <TableCell className="font-medium text-right whitespace-nowrap">
+                          {pump.manufacturer} – {pump.name}
+                        </TableCell>
+                        {pump.statuses.map((status, index) => (
+                          <TableCell key={`${pump.manufacturer}-${pump.name}-${index}`} className="text-center">
+                            {renderStatus(status)}
+                          </TableCell>
+                        ))}
+                      </TableRow>
+                    ))}
+                  </TableBody>
+                  <TableCaption className="text-xs">
+                    ✔ = מותר לפי היצרן | ✖ = אסור לפי היצרן | 〆 לא מומלץ לפי היצרן | תא ריק = אין מידע מפורש בהוראות היצרן
+                  </TableCaption>
+                </Table>
               </div>
             </div>
           </div>
