@@ -15,6 +15,8 @@ export interface StorageGuideline {
   afterHeating?: string;
   container?: string;
   leftOvers?: string;
+  sterilizationAge?: string;
+  sterilizationFrequency?: string;
 }
 
 export const guidelines: Record<GuidelineSource, StorageGuideline> = {
@@ -32,7 +34,9 @@ export const guidelines: Record<GuidelineSource, StorageGuideline> = {
     afterThawingRefrigerator: 'עד 24 שעות במקרר',
     afterHeating: 'עד שעתיים',
     container: 'בשקית או כלי ייעודי לאחסון חלב אם',
-    leftOvers: 'עד שעתיים מסיום ההאכלה'
+    leftOvers: 'עד שעתיים מסיום ההאכלה',
+    sterilizationFrequency: 'לפחות פעם ביום',
+    sterilizationAge: 'חודשיים'
   },
   CDC: {
     roomTemp: '25°C',
@@ -48,7 +52,9 @@ export const guidelines: Record<GuidelineSource, StorageGuideline> = {
     afterThawingRefrigerator: 'עד 24 שעות במקרר',
     afterHeating: 'עד שעתיים',
     container: 'בשקית או כלי ייעודי לאחסון חלב אם',
-    leftOvers: 'עד שעתיים מסיום ההאכלה'
+    leftOvers: 'עד שעתיים מסיום ההאכלה',
+    sterilizationFrequency: 'לפחות פעם ביום',
+    sterilizationAge: 'חודשיים'
   },
   ABM: {
     roomTemp: 'עד 29°C',
@@ -64,7 +70,9 @@ export const guidelines: Record<GuidelineSource, StorageGuideline> = {
     afterThawingRefrigerator: 'עד 24 שעות במקרר',
     afterHeating: 'עד שעתיים',
     container: 'בשקית (ייעודית - פוליפרופילן) או במיכל זכוכית או פלסטיק (ייעודי - פוליפרופילן ללא BPA)',
-    leftOvers: 'עד שעתיים מסיום ההאכלה'
+    leftOvers: 'עד שעתיים מסיום ההאכלה',
+    sterilizationFrequency: 'לפחות פעם ביום',
+    sterilizationAge: 'חודשיים'
   },
   MOH: {
     roomTemp: 'עד 29°C',
@@ -80,6 +88,8 @@ export const guidelines: Record<GuidelineSource, StorageGuideline> = {
     afterThawingRefrigerator: 'עד 24 שעות במקרר',
     afterHeating: 'עד שעתיים',
     container: 'בשקית או כלי ייעודי לאחסון חלב אם, עם תו תקן ישראלי',
-    leftOvers: 'עד שעה מתחילת ההאכלה'
+    leftOvers: 'עד שעה מתחילת ההאכלה',
+    sterilizationFrequency: 'לפחות פעם ביום',
+    sterilizationAge: '6 חודשים'
   },
 };

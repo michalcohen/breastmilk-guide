@@ -1,12 +1,46 @@
 import { PageLayout } from '@/components/PageLayout';
 import { Card } from '@/components/ui/card';
-import { Sparkles, Clock, AlertTriangle, Droplets, Wind, Baby } from 'lucide-react';
+import { Sparkles, Clock, AlertTriangle, Droplets, Wind, Baby, ListCheck } from 'lucide-react';
+import { useGuideline } from '@/contexts/GuidelineContext';
+import { guidelines } from '@/data/guidelines';
 
 const Sterilization = () => {
+  const { source } = useGuideline();
+  const data = guidelines[source];
   return (
     <PageLayout title="הנחיות סטריליזציה">
       <Card className="p-6 bg-card">
         <div className="space-y-6 animate-fade-in">
+
+        <div className="flex items-start gap-4">
+            <ListCheck className="text-primary mt-1" size={24} />
+            <div>
+              <h3 className="font-bold text-lg mb-2">הנחיות כלליות</h3>
+              <ul className="space-y-2 text-muted-foreground">
+                <li className="flex items-start gap-2">
+                  <span className="text-primary mt-1">•</span>
+                  <span>יש לשטוף ידיים היטב במים ובסבון לפי כל מגע עם המשאבה וחלקיה</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-primary mt-1">•</span>
+                  <span>יש לשטוף במים את חלקי המשאבה מיד לאחר כל שימוש בה כדי למנוע ייבוש של החלב באזורים קשים לניקוי</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-primary mt-1">•</span>
+                  <span>יש לוודא ייבוש מלא של החלקים לפני ההרכבה, ביחוד החלקים הפונים כלפי המנוע (רטיבות במנוע עלולה לשבש את פעולתו).</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-primary mt-1">•</span>
+                  <span>יש להשתמש בציוד ניקיון ייעודי כמו מנקה בקבוקים ייעודי או ספוג ייעודי. בכל מקרה אין להשתמש בציוד ניקוי שיש עליו שאריות מזון אחרות.</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-primary mt-1">•</span>
+                  <span>מומלץ להשתמש בקערה לניקוי הציוד כך שלא יהיה זיהום משני משאריות מזון בכיור או על השיש</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+
           <div className="flex items-start gap-4">
             <Baby className="text-primary mt-1" size={24} />
             <div>
@@ -14,15 +48,15 @@ const Sterilization = () => {
               <ul className="space-y-2 text-muted-foreground">
                 <li className="flex items-start gap-2">
                   <span className="text-primary mt-1">•</span>
-                  <span>עד גיל חצי שנה (6 חודשים) יש לבצע סטריליזציה לכל הציוד</span>
+                  <span> יש לבצע סטריליזציה לכל הציוד עד גיל <span className="font-bold text-primary">{data.sterilizationAge}</span></span>
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-primary mt-1">•</span>
-                  <span>לאחר גיל חצי שנה, ניתן להסתפק בשטיפה יסודית במים חמים וסבון</span>
+                  <span>לאחר גיל <span className="font-bold text-primary">{data.sterilizationAge}</span>, ניתן להסתפק בשטיפה יסודית במים חמים וסבון</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-primary mt-1">•</span>
-                  <span>במקרים מסוימים (תינוק פג, מערכת חיסון מוחלשת) ייתכן ויש להמשיך סטריליזציה מעבר לגיל חצי שנה</span>
+                  <span>במקרים מסוימים (תינוק פג, מערכת חיסון מוחלשת) ייתכן ויש להמשיך סטריליזציה מעבר לגיל <span className="font-bold text-primary">{data.sterilizationAge}</span></span>
                 </li>
               </ul>
             </div>
@@ -35,7 +69,7 @@ const Sterilization = () => {
               <ul className="space-y-2 text-muted-foreground">
                 <li className="flex items-start gap-2">
                   <span className="text-accent mt-1">•</span>
-                  <span>בקבוקים ופטמות</span>
+                  <span>בקבוקים, פטמות בקבוקים, מוצצים ופטמות סיליקון</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-accent mt-1">•</span>
@@ -43,11 +77,7 @@ const Sterilization = () => {
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-accent mt-1">•</span>
-                  <span>חלקי משאבה הבאים במגע עם החלב (משפכים, שסתומים, מכסים)</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-accent mt-1">•</span>
-                  <span>מוצצים</span>
+                  <span>חלקי משאבה הבאים במגע עם החלב (משפכים, שסתומים, דיאפרגמות)</span>
                 </li>
               </ul>
             </div>
@@ -64,7 +94,7 @@ const Sterilization = () => {
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-destructive mt-1">•</span>
-                  <span>צינורית המשאבה (לא באה במגע עם החלב)</span>
+                  <span>צינורית המשאבה (לא באה במגע עם החלב, וכניסה של מים שנותרו בצינורית למנוע עלולה לשבש את פעולתו)</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-destructive mt-1">•</span>
@@ -80,12 +110,21 @@ const Sterilization = () => {
               <h3 className="font-bold text-lg mb-2">שיטות סטריליזציה</h3>
               <div className="space-y-4">
                 <div className="bg-secondary/10 p-4 rounded-lg">
-                  <h4 className="font-semibold mb-2">רתיחה במים</h4>
+                  <h4 className="font-semibold mb-2">הרתחה במים</h4>
                   <ul className="space-y-1 text-muted-foreground text-sm">
-                    <li>• לשטוף את הציוד היטב לפני הסטריליזציה</li>
+                    <li>• לשטוף את הציוד היטב לפני הסטריליזציה במים ובסבון</li>
                     <li>• להניח את הציוד בסיר מים רותחים</li>
-                    <li>• להרתיח 5-10 דקות</li>
+                    <li>• להרתיח לפחות 5 דקות, תוך כדי ערבוב</li>
                     <li>• להוציא עם מלקחיים נקיים ולהניח לייבוש</li>
+                  </ul>
+                </div>
+
+                <div className="bg-secondary/10 p-4 rounded-lg">
+                  <h4 className="font-semibold mb-2">מדיח</h4>
+                  <ul className="space-y-1 text-muted-foreground text-sm">
+                    <li>• להניח במגש המדיח העליון (שימו לב להניח כך שלא יהיה לחץ על חלקי הסיליקון, למשל את השסתום לא להניח על פין)</li>
+                    <li>• להפעיל בתכנית של 65 מעלות ומעלה</li>
+                    <li>• אין צורך בניקוי מקדים</li>
                   </ul>
                 </div>
                 
@@ -94,7 +133,6 @@ const Sterilization = () => {
                   <ul className="space-y-1 text-muted-foreground text-sm">
                     <li>• לפעול לפי הוראות היצרן</li>
                     <li>• בדרך כלל 8-12 דקות</li>
-                    <li>• יעיל וקל לשימוש</li>
                   </ul>
                 </div>
 
@@ -117,19 +155,15 @@ const Sterilization = () => {
               <ul className="space-y-2 text-muted-foreground">
                 <li className="flex items-start gap-2">
                   <span className="text-primary mt-1">•</span>
-                  <span>להניח לייבוש על מגבת נקייה או מתקן ייבוש ייעודי</span>
+                  <span>להניח לייבוש על מגבת נקייה או מתקן ייבוש ייעודי. ניתן לייבש גם עם נייר מגבת שאוחסן באזור מוגן מאבק</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-primary mt-1">•</span>
-                  <span>לא לייבש עם מגבת - עלולה להעביר חיידקים</span>
+                  <span>לא לייבש עם מגבת מטבח בשימוש כללי - עלולה להעביר חיידקים</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-primary mt-1">•</span>
-                  <span>לאחסן במקום נקי ויבש</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-primary mt-1">•</span>
-                  <span>להרכיב את הבקבוקים רק לפני השימוש</span>
+                  <span>לאחסן במקום נקי, יבש ומוגן מאבק</span>
                 </li>
               </ul>
             </div>
@@ -146,7 +180,8 @@ const Sterilization = () => {
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-accent mt-1">•</span>
-                  <span>לאחר כל שימוש (עד גיל חצי שנה)</span>
+                  <span>{' '}
+                  <span className="font-bold text-primary">{data.sterilizationFrequency}</span> עד גיל <span className="font-bold text-primary">{data.sterilizationAge}</span> </span>
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-accent mt-1">•</span>
