@@ -78,6 +78,10 @@ const Sterilization = () => {
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-primary mt-1">•</span>
+                  <span>לפני כל סטריליזציה, יש לשטוף את הציוד היטב במים חמים וסבון ולהסיר שאריות חלב. סטריליזציה לא תהיה יעילה אם הציוד לא נשטף כראוי לפני כן</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-primary mt-1">•</span>
                   <span>יש לוודא ייבוש מלא של החלקים לפני ההרכבה, ביחוד החלקים הפונים כלפי המנוע (רטיבות במנוע עלולה לשבש את פעולתו).</span>
                 </li>
                 <li className="flex items-start gap-2">
@@ -141,7 +145,7 @@ const Sterilization = () => {
               <ul className="space-y-2 text-muted-foreground">
                 <li className="flex items-start gap-2">
                   <span className="text-destructive mt-1">•</span>
-                  <span>צינוריות האכלה - יש להחליף אחת לשבוע</span>
+                  <span>צינוריות האכלה - יש להחליף אחת לשבוע אם מיועדת לחלב אם בלבד, ואחת לשלושה ימים אם מיועדת גם לתמ"ל. יש לשטוף היטב לאחר השימוש במים וסבון באמצעות מזרק, ולייבש היטב באמצעות דחיסה של אוויר במזרק. יש לתלות הפןך.</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-destructive mt-1">•</span>
@@ -176,20 +180,23 @@ const Sterilization = () => {
                     <li>• להניח במגש המדיח העליון (שימו לב להניח כך שלא יהיה לחץ על חלקי הסיליקון, למשל את השסתום לא להניח על פין)</li>
                     <li>• להפעיל בתכנית של 65 מעלות ומעלה</li>
                     <li>• אין צורך בניקוי מקדים</li>
+                    <li>• יש להסיר שאריות מזון  משאר הכלים במדיח</li>
                   </ul>
                 </div>
                 
                 <div className="bg-secondary/10 p-4 rounded-lg">
                   <h4 className="font-semibold mb-2">מעקר חשמלי (קיטור)</h4>
                   <ul className="space-y-1 text-muted-foreground text-sm">
+                    <li>• לשטוף את הציוד היטב לפני הסטריליזציה במים ובסבון</li>
                     <li>• לפעול לפי הוראות היצרן</li>
                     <li>• בדרך כלל 8-12 דקות</li>
                   </ul>
                 </div>
 
                 <div className="bg-secondary/10 p-4 rounded-lg">
-                  <h4 className="font-semibold mb-2">שקיות סטריליזציה למיקרוגל</h4>
+                  <h4 className="font-semibold mb-2">מיקרוגל (שקית / קופסה)</h4>
                   <ul className="space-y-1 text-muted-foreground text-sm">
+                    <li>• לשטוף את הציוד היטב לפני הסטריליזציה במים ובסבון</li>
                     <li>• לפעול לפי הוראות היצרן</li>
                     <li>• בדרך כלל 3-5 דקות</li>
                     <li>• נוחות לשימוש בנסיעות</li>
@@ -286,7 +293,7 @@ const Sterilization = () => {
 
           <div className="bg-accent/20 p-4 rounded-lg border border-accent/30">
             <p className="text-sm text-foreground">
-              <span className="font-bold">טיפ:</span> לפני כל סטריליזציה, יש לשטוף את הציוד היטב במים חמים וסבון ולהסיר שאריות חלב. סטריליזציה לא תהיה יעילה אם הציוד לא נשטף כראוי לפני כן.
+              <span className="font-bold">שימי לב:</span> לפני כל סטריליזציה, יש לשטוף את הציוד היטב במים חמים וסבון ולהסיר שאריות חלב. סטריליזציה לא תהיה יעילה אם הציוד לא נשטף כראוי לפני כן.
             </p>
           </div>
         </div>
