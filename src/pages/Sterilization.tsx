@@ -145,7 +145,7 @@ const Sterilization = () => {
               <ul className="space-y-2 text-muted-foreground">
                 <li className="flex items-start gap-2">
                   <span className="text-destructive mt-1">•</span>
-                  <span>צינוריות האכלה - יש להחליף אחת לשבוע אם מיועדת לחלב אם בלבד, ואחת לשלושה ימים אם מיועדת גם לתמ"ל. יש לשטוף היטב לאחר השימוש במים וסבון באמצעות מזרק, ולייבש היטב באמצעות דחיסה של אוויר במזרק. יש לתלות הפןך.</span>
+                  <span>צינוריות האכלה - יש להחליף אחת לשבוע אם מיועדת לחלב אם בלבד, ואחת לשלושה ימים אם מיועדת גם לתמ"ל. יש לשטוף היטב לאחר השימוש במים וסבון באמצעות מזרק, ולייבש היטב באמצעות דחיסה של אוויר במזרק. יש לתלות הפוך.</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-destructive mt-1">•</span>
