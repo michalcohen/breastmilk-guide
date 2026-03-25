@@ -19,7 +19,7 @@ const DirectUse = () => {
               <h3 className="font-bold text-lg mb-2">טמפרטורת החדר</h3>
               <p className="text-muted-foreground">
                 חלב אם שנשאב יכול להישאר בטמפרטורת החדר {' '}
-                  <span className="font-bold text-primary">({data.roomTemp})</span>{' '}
+                <span className="font-bold text-primary">({data.roomTemp})</span>{' '}
                 <span className="font-bold text-primary">{data.roomTempDuration}</span>
               </p>
             </div>
@@ -33,7 +33,7 @@ const DirectUse = () => {
                 <li className="flex items-start gap-2">
                   <span className="text-primary mt-1">•</span>
                   לצריכה אופטימלית, מומלץ להאכיל את התינוק בחלב האם מיד לאחר השאיבה או בהקדם האפשרי.
-                חלב טרי שומר על כל התכונות התזונתיות והאימונולוגיות שלו.
+                  חלב טרי שומר על כל התכונות התזונתיות והאימונולוגיות שלו.
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-primary mt-1">•</span>
@@ -50,11 +50,11 @@ const DirectUse = () => {
               <ul className="space-y-2 text-muted-foreground">
                 <li className="flex items-start gap-2">
                   <span className="text-primary mt-1">•</span>
-                  <span>יש לוודא שהבקבוק או המיכל נקיים ומעוקרים</span>
+                  <span>יש לוודא שהבקבוק או המיכל נקיים ומעוקרים לפי הנחיות הסטריליזציה</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-primary mt-1">•</span>
-                  <span>יש לסמן את תאריך השאיבה על המיכל</span>
+                  <span>יש לסמן את התאריך ושעת השאיבה על המיכל</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-primary mt-1">•</span>

@@ -80,7 +80,7 @@ export const guidelines: Record<GuidelineSource, StorageGuideline> = {
   },
   MOH: {
     roomTemp: 'עד 29°C',
-    roomTempDuration: 'מומלץ עד 4 שעות, אפשרי עד 6.',
+    roomTempDuration: 'מומלץ עד 4 שעות, אפשרי עד 6 שעות.',
     refrigerator: '4°C - מומלץ עד 3 ימים, אפשרי עד 8 ימים.',
     refrigeratorBeforeFreezing: '24 שעות',
     freezerBest: '(4°C-) - עד 3 חודשים',

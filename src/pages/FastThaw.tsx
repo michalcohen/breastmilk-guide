@@ -80,9 +80,9 @@ const FastThaw = () => {
                   <span className="text-primary mt-1">•</span>
                   <span>ניתן להציע את החלב גם קר מהמקרר. יש תינוקות שאף מעדיפים לצרוך אותו כך</span>
                 </li>
-                
+
               </ul>
-              
+
             </div>
           </div>
 
@@ -92,6 +92,12 @@ const FastThaw = () => {
               מתוכננת, עדיפה הפשרה איטית במקרר.
             </p>
           </div>
+        </div>
+        <div className="bg-primary/10 p-4 rounded-lg border border-primary/20">
+          <p className="text-sm text-foreground">
+            <span className="font-bold">לתשומת לבך:</span> ההמלצות משתנות בין ארגוני הבריאות השונים.
+            ניתן לבחור את הארגון המועדף עליך מהכפתורים למעלה.
+          </p>
         </div>
       </Card>
 

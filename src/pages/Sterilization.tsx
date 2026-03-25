@@ -50,7 +50,7 @@ const Sterilization = () => {
     if (status === 'forbidden') {
       return <span className="text-destructive font-bold">✖</span>;
     }
-    if (status === 'unrecomanded'){
+    if (status === 'unrecomanded') {
       return <span className="text-destructive font-bold">〆</span>;
     }
     return null;
@@ -63,7 +63,7 @@ const Sterilization = () => {
       <Card className="p-6 bg-card">
         <div className="space-y-6 animate-fade-in">
 
-        <div className="flex items-start gap-4">
+          <div className="flex items-start gap-4">
             <ListCheck className="text-primary mt-1" size={24} />
             <div>
               <h3 className="font-bold text-lg mb-2">הנחיות כלליות</h3>
@@ -114,6 +114,20 @@ const Sterilization = () => {
                   <span>במקרים מסוימים (תינוק פג, מערכת חיסון מוחלשת) ייתכן ויש להמשיך סטריליזציה מעבר לגיל <span className="font-bold text-primary">{data.sterilizationAge}</span></span>
                 </li>
               </ul>
+
+              <div className="mt-4 bg-primary/10 p-4 rounded-lg border border-primary/30">
+                <p className="font-bold text-foreground mb-2">מעוניינת לתרום חלב אם לבנק חלב האם?</p>
+                <ul className="space-y-2 text-muted-foreground">
+                  <li className="flex items-start gap-2">
+                    <span className="text-primary mt-1">•</span>
+                    <span>יש לבצע סטריליזציה לאחר כל שימוש</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-primary mt-1">•</span>
+                    <span>יש לשאוב במשאבה אישית או בעלת אישור משרד הבריאות להעברה בין נשים</span>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
 
@@ -183,7 +197,7 @@ const Sterilization = () => {
                     <li>• יש להסיר שאריות מזון  משאר הכלים במדיח</li>
                   </ul>
                 </div>
-                
+
                 <div className="bg-secondary/10 p-4 rounded-lg">
                   <h4 className="font-semibold mb-2">מעקר חשמלי (קיטור)</h4>
                   <ul className="space-y-1 text-muted-foreground text-sm">
@@ -281,7 +295,7 @@ const Sterilization = () => {
                 <li className="flex items-start gap-2">
                   <span className="text-accent mt-1">•</span>
                   <span>{' '}
-                  <span className="font-bold text-primary">{data.sterilizationFrequency}</span> עד גיל <span className="font-bold text-primary">{data.sterilizationAge}</span> </span>
+                    <span className="font-bold text-primary">{data.sterilizationFrequency}</span> עד גיל <span className="font-bold text-primary">{data.sterilizationAge}</span> </span>
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-accent mt-1">•</span>

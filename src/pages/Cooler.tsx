@@ -74,6 +74,12 @@ const Cooler = () => {
             </div>
           </div>
         </div>
+        <div className="bg-primary/10 p-4 rounded-lg border border-primary/20">
+          <p className="text-sm text-foreground">
+            <span className="font-bold">לתשומת לבך:</span> ההמלצות משתנות בין ארגוני הבריאות השונים.
+            ניתן לבחור את הארגון המועדף עליך מהכפתורים למעלה.
+          </p>
+        </div>
       </Card>
 
       <div className="mt-8">
@@ -85,14 +91,14 @@ const Cooler = () => {
             title="חימום חלב אם"
             description="חימום חלב מהצידנית"
           />
-          
+
           <StorageCard
             to="/refrigerator"
             icon={<Refrigerator size={40} />}
             title="העברה למקרר"
             description="אחסון קצר טווח"
           />
-          
+
           <StorageCard
             to="/freezer"
             icon={<Snowflake size={40} />}
