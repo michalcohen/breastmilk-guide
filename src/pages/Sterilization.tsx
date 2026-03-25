@@ -126,6 +126,10 @@ const Sterilization = () => {
                     <span className="text-primary mt-1">•</span>
                     <span>יש לשאוב במשאבה אישית או בעלת אישור משרד הבריאות להעברה בין נשים</span>
                   </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-primary mt-1">•</span>
+                    <span>יש להקפיד על הנחיות משרד הבריאות לאחסון חלב אם</span>
+                  </li>
                 </ul>
               </div>
             </div>
