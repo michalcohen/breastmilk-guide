@@ -50,8 +50,8 @@ const Refrigerator = () => {
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-primary mt-1">•</span>
-                  <span>אם לא יהיה שימוש בחלב השאוב {' '}
-                  <span className="font-bold text-primary">{data.refrigeratorBeforeFreezing}</span> , מומלץ להקפיאו כמה שיותר מוקדם</span>
+                  <span>אם לא יהיה שימוש בחלב השאוב תוך {' '}
+                    <span className="font-bold text-primary">{data.freshOverFrozen}</span> , מומלץ להקפיאו כמה שיותר מוקדם, ולא יאוחר מ-<span className="font-bold text-primary">{data.refrigeratorBeforeFreezing}</span> מזמן השאיבה</span>
                 </li>
               </ul>
             </div>
@@ -73,7 +73,7 @@ const Refrigerator = () => {
                 <li className="flex items-start gap-2">
                   <span className="text-primary mt-1">•</span>
                   <span>חלב שהוצא מהמקרר ללא צידנית עם קרחום קפוא, ייחשב כחלב שחומם וייצרך {' '}
-                  <span className="font-bold text-primary">{data.afterHeating}</span></span>
+                    <span className="font-bold text-primary">{data.afterHeating}</span></span>
                 </li>
               </ul>
             </div>
@@ -90,7 +90,7 @@ const Refrigerator = () => {
             title="העברה למקפיא"
             description="לאחסון ארוך טווח"
           />
-          
+
           <StorageCard
             to="/after-heating"
             icon={<Flame size={40} />}

@@ -54,7 +54,7 @@ const SlowThaw = () => {
             <div>
               <h3 className="font-bold text-lg mb-2">לאחר ההפשרה</h3>
               <ul className="space-y-2 text-muted-foreground">
-              <li className="flex items-start gap-2">
+                <li className="flex items-start gap-2">
                   <span className="text-primary mt-1">•</span>
                   משך זמן שימוש: {' '}
                   <span className="font-bold text-primary">{data.afterThawingRefrigerator}</span> מהפשרה מלאה (לא מרגע ההעברה למקרר)
@@ -65,7 +65,7 @@ const SlowThaw = () => {
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-primary mt-1">•</span>
-                  <span>יש לערבב בעדינות את החלב כדי לשחרר שכבות שומן שהתקשו</span>
+                  <span>יש לערבב בעדינות את החלב כדי לשחרר שכבות שומן שהתקשו, אך לא לנער</span>
                 </li>
               </ul>
             </div>
@@ -82,7 +82,7 @@ const SlowThaw = () => {
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-destructive mt-1">•</span>
-                  <span>אם לא היה שימוש בחלב תוך 24 שעות - יש לזרוק אותו</span>
+                  <span>אם לא היה שימוש בחלב <span className="font-bold text-primary">{data.afterThawingRefrigerator}</span> - אין לצרוך אותו</span>
                 </li>
               </ul>
             </div>

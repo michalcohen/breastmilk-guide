@@ -25,7 +25,7 @@ const Freezer = () => {
                   מקפיא רגיל ניתן לשימוש: <span className="font-bold text-primary">{data.freezerAcceptable}</span>
                 </p>
                 <p>
-                  מקפיא עמוק ניתן לשימוש עד: <span className="font-bold text-primary">{data.deepFreezer}</span>
+                  מקפיא עמוק ניתן לשימוש: <span className="font-bold text-primary">{data.deepFreezer}</span>
                 </p>
               </div>
             </div>
@@ -42,7 +42,7 @@ const Freezer = () => {
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-primary mt-1">•</span>
-                  <span>יש להשתמש בשקיות ייעודיות להקפאת חלב אם</span>
+                  <span>יש להשתמש בשקיות ייעודיות להקפאת חלב אם עם תו תקן ישראלי</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-primary mt-1">•</span>
@@ -71,11 +71,11 @@ const Freezer = () => {
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-primary mt-1">•</span>
-                  <span>מומלץ להקפיא במנות קטנות (30-90 מ"ל)  לנוחות ולמניעת בזבוז</span>
+                  <span>מומלץ להקפיא במנות קטנות (30-90 מ"ל)  להפשרה מהירה ולמניעת בזבוז</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-primary mt-1">•</span>
-                  <span>מומלץ לא להקפיא חלב שנועד לצריכה בימים הקרובים. לחלב טרי תכונות בריאותיות עדיפות על פני חלב קפוא ומופשר</span>
+                  <span>מומלץ לא להקפיא חלב שנועד לצריכה תוך <span className="font-bold text-primary">{data.freshOverFrozen}</span> ימים. לחלב טרי תכונות בריאותיות עדיפות על פני חלב קפוא ומופשר</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-primary mt-1">•</span>
@@ -90,7 +90,7 @@ const Freezer = () => {
       <div className="mt-8">
         <h2 className="text-2xl font-bold mb-6 text-center">אפשרויות הפשרה</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                   
+
           <StorageCard
             to="/slow-thaw"
             icon={<SnowflakeIcon size={40} />}

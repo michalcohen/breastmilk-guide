@@ -17,6 +17,7 @@ export interface StorageGuideline {
   leftOvers?: string;
   sterilizationAge?: string;
   sterilizationFrequency?: string;
+  freshOverFrozen?: string;
 }
 
 export const guidelines: Record<GuidelineSource, StorageGuideline> = {
@@ -24,7 +25,7 @@ export const guidelines: Record<GuidelineSource, StorageGuideline> = {
     roomTemp: 'עד 29°C',
     roomTempDuration: 'עד 4 שעות',
     refrigerator: '4°C - מומלץ עד 4 ימים, אפשרי עד 8',
-    refrigeratorBeforeFreezing: 'תוך 4 ימים',
+    refrigeratorBeforeFreezing: ' 4 ימים',
     freezerBest: '(4°C-) - עד 6 חודשים',
     freezerAcceptable: '(4°C-) - עד 12 חודשים',
     deepFreezer: '(20°C-) - עד 12 חודשים',
@@ -36,13 +37,14 @@ export const guidelines: Record<GuidelineSource, StorageGuideline> = {
     container: 'בשקית או כלי ייעודי לאחסון חלב אם',
     leftOvers: 'עד שעתיים מסיום ההאכלה',
     sterilizationFrequency: 'לפחות פעם ביום',
-    sterilizationAge: 'חודשיים'
+    sterilizationAge: 'חודשיים',
+    freshOverFrozen: '4 ימים'
   },
   CDC: {
     roomTemp: '25°C',
     roomTempDuration: 'עד 4 שעות',
     refrigerator: '4°C - עד 4 ימים',
-    refrigeratorBeforeFreezing: 'תוך 4 ימים',
+    refrigeratorBeforeFreezing: '4 ימים',
     freezerBest: '(18°C-) - עד 6 חודשים',
     freezerAcceptable: '(18°C-) - עד 12 חודשים',
     deepFreezer: '(20°C-) - עד 12 חודשים',
@@ -54,13 +56,14 @@ export const guidelines: Record<GuidelineSource, StorageGuideline> = {
     container: 'בשקית או כלי ייעודי לאחסון חלב אם',
     leftOvers: 'עד שעתיים מסיום ההאכלה',
     sterilizationFrequency: 'לפחות פעם ביום',
-    sterilizationAge: 'חודשיים'
+    sterilizationAge: 'חודשיים',
+    freshOverFrozen: '4 ימים'
   },
   ABM: {
     roomTemp: 'עד 29°C',
     roomTempDuration: 'עד 4 שעות',
-    refrigerator: '4°C - מומלץ עד 4 ימים, אפשרי עד 8',  
-    refrigeratorBeforeFreezing: 'תוך 5 ימים',
+    refrigerator: '4°C - מומלץ עד 4 ימים, אפשרי עד 8',
+    refrigeratorBeforeFreezing: '5 ימים',
     freezerBest: '(4°C-) - עד 6 חודשים',
     freezerAcceptable: '(4°C-) - עד 12 חודשים',
     deepFreezer: '(18°C-) - עד 12 חודשים',
@@ -72,13 +75,14 @@ export const guidelines: Record<GuidelineSource, StorageGuideline> = {
     container: 'בשקית (ייעודית - פוליפרופילן) או במיכל זכוכית או פלסטיק (ייעודי - פוליפרופילן ללא BPA)',
     leftOvers: 'עד שעתיים מסיום ההאכלה',
     sterilizationFrequency: 'לפחות פעם ביום',
-    sterilizationAge: 'חודשיים'
+    sterilizationAge: 'חודשיים',
+    freshOverFrozen: '4 ימים'
   },
   MOH: {
     roomTemp: 'עד 29°C',
     roomTempDuration: 'מומלץ עד 4 שעות, אפשרי עד 6.',
     refrigerator: '4°C - מומלץ עד 3 ימים, אפשרי עד 8 ימים.',
-    refrigeratorBeforeFreezing: 'תוך 24 שעות',
+    refrigeratorBeforeFreezing: '24 שעות',
     freezerBest: '(4°C-) - עד 3 חודשים',
     freezerAcceptable: '(4°C-) - עד 12 חודשים',
     deepFreezer: '(18°C-) - מומלץ עד 6 חודשים. אפשרי עד 12 חודשים',
@@ -90,6 +94,7 @@ export const guidelines: Record<GuidelineSource, StorageGuideline> = {
     container: 'בשקית או כלי ייעודי לאחסון חלב אם, עם תו תקן ישראלי',
     leftOvers: 'עד שעה מתחילת ההאכלה',
     sterilizationFrequency: 'לפחות פעם ביום',
-    sterilizationAge: '6 חודשים'
+    sterilizationAge: '6 חודשים',
+    freshOverFrozen: '3 ימים'
   },
 };
