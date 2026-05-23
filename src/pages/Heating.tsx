@@ -20,11 +20,11 @@ const Heating = () => {
               <ul className="space-y-2 text-muted-foreground">
                 <li className="flex items-start gap-2">
                   <span className="text-primary mt-1">•</span>
-                  <span>ניתן להעמיד את הבקבוק במים חמימים (לא רותחים), או במחמם בקבוקים ייעודי</span>
+                  <span>ניתן להעמיד את הבקבוק במים חמימים (לא רותחים)</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-primary mt-1">•</span>
-                  <span>יש לערבב את החלב בבקבוק בתנועות סיבוביות עדינות כדי להמיס את שכבות השומן מבלי להכניס בועות אוויר רבות לחלב</span>
+                  <span>יש לערבב את החלב בבקבוק בתנועות סיבוביות עדינות</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-primary mt-1">•</span>
@@ -41,11 +41,11 @@ const Heating = () => {
               <ul className="space-y-2 text-muted-foreground">
                 <li className="flex items-start gap-2">
                   <span className="text-destructive mt-1">•</span>
-                  <span>אסור לחמם במיקרוגל - הדבר עלול להרוס חומרים מזינים ולגרום לכוויות</span>
+                  <span>אסור לחמם במיקרוגל - הדבר עלול להרוס חומרים חיוניים בחלב ולגרום לכוויות</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-destructive mt-1">•</span>
-                  <span>אסור להרתיח חלב אם - הדבר פוגע בתכונות התזונתיות של החלב</span>
+                  <span>אסור להרתיח חלב אם - הדבר פוגע ברכיבים החיוניים של החלב</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-destructive mt-1">•</span>
@@ -94,7 +94,7 @@ const Heating = () => {
         <div className="bg-primary/10 p-4 rounded-lg border border-primary/20">
           <p className="text-sm text-foreground">
             <span className="font-bold">לתשומת לבך:</span> ההמלצות משתנות בין ארגוני הבריאות השונים.
-            ניתן לבחור את הארגון המועדף עליך מהכפתורים למעלה.
+            ניתן לבחור את הארגון המועדף עליך מהאפשרויות למעלה.
           </p>
         </div>
       </Card>

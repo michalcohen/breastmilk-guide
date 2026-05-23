@@ -4,6 +4,7 @@ import { useGuideline } from '@/contexts/GuidelineContext';
 import { guidelines } from '@/data/guidelines';
 import { Flame, Thermometer, AlertTriangle, Clock, PillBottleIcon, Option, List, Ear, OptionIcon, InfoIcon, MedalIcon, TestTube, Sparkles } from 'lucide-react';
 import { StorageCard } from '@/components/StorageCard';
+import bottleFeedingImg from '@/assets/bottle-feeding.png';
 
 const BottleFeeding = () => {
   const { source } = useGuideline();
@@ -53,6 +54,14 @@ const BottleFeeding = () => {
                     allowFullScreen
                   />
                 </div>
+              </div>
+
+              <div className="mb-6 rounded-xl overflow-hidden shadow-sm border border-border bg-white">
+                <img 
+                  src={bottleFeedingImg} 
+                  alt="הדגמת האכלה קשובה מבקבוק" 
+                  className="w-full h-auto object-contain max-h-96 mx-auto"
+                />
               </div>
 
               <ul className="space-y-2 text-muted-foreground">
@@ -116,7 +125,7 @@ const BottleFeeding = () => {
         <div className="bg-primary/10 p-4 rounded-lg border border-primary/20">
           <p className="text-sm text-foreground">
             <span className="font-bold">לתשומת לבך:</span> ההמלצות משתנות בין ארגוני הבריאות השונים.
-            ניתן לבחור את הארגון המועדף עליך מהכפתורים למעלה.
+            ניתן לבחור את הארגון המועדף עליך מהאפשרויות למעלה.
           </p>
         </div>
       </Card>

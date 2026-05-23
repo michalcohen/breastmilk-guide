@@ -131,6 +131,9 @@ const Sterilization = () => {
                     <span>יש להקפיד על הנחיות משרד הבריאות לאחסון חלב אם</span>
                   </li>
                 </ul>
+                <p className="mt-3 text-sm text-foreground">
+                  למידע נוסף אודות תרומה לבנק חלב האם <a href="https://me.health.gov.il/parenting/raising-children/baby-nutrition/breast-milk-bank/donate-breast-milk/" target="_blank" rel="noopener noreferrer" className="text-blue-700 hover:text-blue-800 hover:underline font-bold">לחצי כאן</a>
+                </p>
               </div>
             </div>
           </div>
@@ -150,7 +153,7 @@ const Sterilization = () => {
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-accent mt-1">•</span>
-                  <span>חלקי משאבה הבאים במגע עם החלב (משפכים, שסתומים, דיאפרגמות)</span>
+                  <span>חלקי משאבה הבאים במגע עם החלב (משפכים, שסתומים, דיאפרגמות, מיכלים וכו')</span>
                 </li>
               </ul>
             </div>

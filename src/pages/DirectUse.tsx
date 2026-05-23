@@ -58,7 +58,7 @@ const DirectUse = () => {
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-primary mt-1">•</span>
-                  <span>אם החלב לא נצרך תוך הזמן המומלץ, יש להעביר למקרר או למקפיא בהקדם</span>
+                  <span>אם החלב לא ייצרך תוך הזמן המומלץ, יש להעביר למקרר או למקפיא בהקדם</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-primary mt-1">•</span>
@@ -71,7 +71,7 @@ const DirectUse = () => {
           <div className="bg-primary/10 p-4 rounded-lg border border-primary/20">
             <p className="text-sm text-foreground">
               <span className="font-bold">לתשומת לבך:</span> ההמלצות משתנות בין ארגוני הבריאות השונים.
-              ניתן לבחור את הארגון המועדף עליך מהכפתורים למעלה.
+              ניתן לבחור את הארגון המועדף עליך מהאפשרויות למעלה.
             </p>
           </div>
         </div>

@@ -78,11 +78,11 @@ const SlowThaw = () => {
               <ul className="space-y-2 text-muted-foreground">
                 <li className="flex items-start gap-2">
                   <span className="text-destructive mt-1">•</span>
-                  <span>חלב שהגיע להפשרה מלאה (כלומר ללא גושי קרח כלל) אסור להקפיא שנית.</span>
+                  <span>חלב שהופשר אסור להקפיא שנית.</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-destructive mt-1">•</span>
-                  <span>אם לא היה שימוש בחלב <span className="font-bold text-primary">{data.afterThawingRefrigerator}</span> - אין לצרוך אותו</span>
+                  <span>תוקפו של החלב המופשר הוא  <span className="font-bold text-primary">{data.afterThawingRefrigerator}</span> מההפשרה</span>
                 </li>
               </ul>
             </div>
@@ -91,7 +91,7 @@ const SlowThaw = () => {
         <div className="bg-primary/10 p-4 rounded-lg border border-primary/20">
           <p className="text-sm text-foreground">
             <span className="font-bold">לתשומת לבך:</span> ההמלצות משתנות בין ארגוני הבריאות השונים.
-            ניתן לבחור את הארגון המועדף עליך מהכפתורים למעלה.
+            ניתן לבחור את הארגון המועדף עליך מהאפשרויות למעלה.
           </p>
         </div>
       </Card>

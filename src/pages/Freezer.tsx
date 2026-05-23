@@ -19,13 +19,13 @@ const Freezer = () => {
               <h3 className="font-bold text-lg mb-2">טמפרטורה ומשך זמן</h3>
               <div className="space-y-2 text-muted-foreground">
                 <p>
-                  מקפיא רגיל מומלץ לשימוש: <span className="font-bold text-primary">{data.freezerBest}</span>
+                  מקפיא רגיל המלצה לשימוש: <span className="font-bold text-primary">{data.freezerBest}</span>
                 </p>
                 <p>
                   מקפיא רגיל ניתן לשימוש: <span className="font-bold text-primary">{data.freezerAcceptable}</span>
                 </p>
                 <p>
-                  מקפיא עמוק ניתן לשימוש: <span className="font-bold text-primary">{data.deepFreezer}</span>
+                  מקפיא עמוק: <span className="font-bold text-primary">{data.deepFreezer}</span>
                 </p>
               </div>
             </div>
@@ -67,7 +67,7 @@ const Freezer = () => {
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-primary mt-1">•</span>
-                  <span>חלב שהגיע להפשרה מלאה (כלומר, ללא גושי קרח כלל) אסור להקפיא שנית.</span>
+                  <span>חלב שהופשר אסור להקפיא שנית.</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-primary mt-1">•</span>
@@ -88,7 +88,7 @@ const Freezer = () => {
         <div className="bg-primary/10 p-4 rounded-lg border border-primary/20">
           <p className="text-sm text-foreground">
             <span className="font-bold">לתשומת לבך:</span> ההמלצות משתנות בין ארגוני הבריאות השונים.
-            ניתן לבחור את הארגון המועדף עליך מהכפתורים למעלה.
+            ניתן לבחור את הארגון המועדף עליך מהאפשרויות למעלה.
           </p>
         </div>
       </Card>
