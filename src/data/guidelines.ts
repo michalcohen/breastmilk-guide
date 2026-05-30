@@ -26,7 +26,7 @@ export const guidelines: Record<GuidelineSource, StorageGuideline> = {
     roomTempDuration: 'עד 4 שעות',
     refrigerator: '4°C - מומלץ עד 4 ימים, אפשרי עד 8',
     refrigeratorBeforeFreezing: ' 4 ימים',
-    freezerBest: '(4°C-) - עד 6 חודשים',
+    freezerBest: '(4°C-) - מומלץ עד 6 חודשים, אפשרי עד 12 חודשים',
     freezerAcceptable: '(4°C-) - עד 12 חודשים',
     deepFreezer: '(20°C-) - עד 12 חודשים',
     cooler: '15°C - עד 24 שעות',
@@ -45,7 +45,7 @@ export const guidelines: Record<GuidelineSource, StorageGuideline> = {
     roomTempDuration: 'עד 4 שעות',
     refrigerator: '4°C - עד 4 ימים',
     refrigeratorBeforeFreezing: '4 ימים',
-    freezerBest: '(18°C-) - עד 6 חודשים',
+    freezerBest: '(18°C-) - מומלץ עד 6 חודשים, אפשרי עד 12 חודשים',
     freezerAcceptable: '(18°C-) - עד 12 חודשים',
     deepFreezer: '(20°C-) - עד 12 חודשים',
     cooler: 'עד 24 שעות',
@@ -64,7 +64,7 @@ export const guidelines: Record<GuidelineSource, StorageGuideline> = {
     roomTempDuration: 'עד 4 שעות',
     refrigerator: '4°C - מומלץ עד 4 ימים, אפשרי עד 8',
     refrigeratorBeforeFreezing: '5 ימים',
-    freezerBest: '(4°C-) - עד 6 חודשים',
+    freezerBest: '(4°C-) - מומלץ עד 6 חודשים, אפשרי עד 12 חודשים',
     freezerAcceptable: '(4°C-) - עד 12 חודשים',
     deepFreezer: '(18°C-) - עד 12 חודשים',
     cooler: '15°C - עד 24 שעות',
@@ -83,7 +83,7 @@ export const guidelines: Record<GuidelineSource, StorageGuideline> = {
     roomTempDuration: 'מומלץ עד 4 שעות, אפשרי עד 6 שעות.', // [c 5 s 5.1]
     refrigerator: '4°C - מומלץ עד 3 ימים, אפשרי עד 8 ימים.', // [c 5 s 5.2]
     refrigeratorBeforeFreezing: '24 שעות', // [c 1 s 1.5]
-    freezerBest: '(4°C-) - עד 3 חודשים', // [c 5 s 5.5]
+    freezerBest: '(4°C-) - מומלץ עד 3 חודשים, אפשרי עד 12 חודשים', // [c 5 s 5.5]
     freezerAcceptable: '(4°C-) - עד 12 חודשים', // [c 5 s 5.5]
     deepFreezer: '(18°C-) - מומלץ עד 6 חודשים. אפשרי עד 12 חודשים', // [c 5 s 5.6]
     cooler: 'מינוס 15°C - עד 24 שעות', // [c 5 s 5.2]

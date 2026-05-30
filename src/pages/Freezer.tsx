@@ -19,10 +19,7 @@ const Freezer = () => {
               <h3 className="font-bold text-lg mb-2">טמפרטורה ומשך זמן</h3>
               <div className="space-y-2 text-muted-foreground">
                 <p>
-                  מקפיא רגיל המלצה לשימוש: <span className="font-bold text-primary">{data.freezerBest}</span>
-                </p>
-                <p>
-                  מקפיא רגיל ניתן לשימוש: <span className="font-bold text-primary">{data.freezerAcceptable}</span>
+                  מקפיא רגיל: <span className="font-bold text-primary">{data.freezerBest}</span>
                 </p>
                 <p>
                   מקפיא עמוק: <span className="font-bold text-primary">{data.deepFreezer}</span>
