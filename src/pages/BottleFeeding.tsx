@@ -57,9 +57,9 @@ const BottleFeeding = () => {
               </div>
 
               <div className="mb-6 rounded-xl overflow-hidden shadow-sm border border-border bg-white">
-                <img 
-                  src={bottleFeedingImg} 
-                  alt="הדגמת האכלה קשובה מבקבוק" 
+                <img
+                  src={bottleFeedingImg}
+                  alt="הדגמת האכלה קשובה מבקבוק"
                   className="w-full h-auto object-contain max-h-96 mx-auto"
                 />
               </div>
@@ -67,7 +67,7 @@ const BottleFeeding = () => {
               <ul className="space-y-2 text-muted-foreground">
                 <li className="flex items-start gap-2">
                   <span className="text-destructive mt-1">•</span>
-                  <span>התינוק ישב במאונך </span>
+                  <span>התינוק מאונך לרצפה, בין אם ישוב או תמוך בתנוחה זו כתלות בגיל ובהתפתחות</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-destructive mt-1">•</span>
@@ -104,7 +104,7 @@ const BottleFeeding = () => {
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-destructive mt-1">•</span>
-                  <span>כוסית פתוחה (או במידת הצורך כוס אימון) זוהי חלופה טובה במקרה של סרבנות בקבוקים</span>
+                  <span>כוסית פתוחה (או במידת הצורך כוס אימון) זוהי חלופה טובה במקרה של תינוקות שלא ניזונים מבקבוק</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-destructive mt-1">•</span>
